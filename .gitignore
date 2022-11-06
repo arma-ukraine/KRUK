@@ -4,5 +4,6 @@
 
 *.pyc
 *.pbo
+*.bisign
 
 server/server-profile
