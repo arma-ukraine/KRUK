@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.vscode
+
+*.pyc
+*.pbo
+
+server/server-profile
