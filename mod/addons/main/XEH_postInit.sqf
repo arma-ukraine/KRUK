@@ -13,6 +13,10 @@ if (isServer) then {
 };
 
 if (hasInterface) then {
+	waitUntil {
+		!isNull player
+	};
+
 	call FUNC(initVehicleLimitations);
 	call FUNC(initFuelConsumption);
 	(getPlayerUID player) call FUNC(loadCharacter);

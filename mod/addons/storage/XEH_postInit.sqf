@@ -5,4 +5,8 @@ TRACE_1("trace", nil);
 if (isServer) then {};
 
 // Client.
-if (hasInterface) then {};
+if (hasInterface) then {
+	waitUntil {
+		!isNull player
+	};
+};

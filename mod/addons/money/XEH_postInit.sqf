@@ -7,4 +7,8 @@ if (isServer) then {
 };
 
 // Client.
-if (hasInterface) then {};
+if (hasInterface) then {
+	waitUntil {
+		!isNull player
+	};
+};
