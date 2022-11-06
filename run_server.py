@@ -19,10 +19,5 @@ cmd = " ".join(
     ]
 )
 
-# Copy keys.
-for mod in settings.MODS:
-    for filename in glob.glob(f"{(pathlib.Path(mod)).absolute()}/**/*.bikey"):
-        shutil.copy(filename, settings.SERVER_PATH / "keys")
-
 print(cmd)
 os.system(f"start {cmd}")

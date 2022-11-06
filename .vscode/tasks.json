@@ -4,13 +4,31 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build main",
+      "label": "build",
       "type": "shell",
-      "command": "makepbo -P -X *.cpp addons/main addons/main.pbo && makepbo -P -X *.cpp addons/money addons/money.pbo && makepbo -P -X *.cpp addons/storage addons/storage.pbo && makepbo -P -X *.cpp addons/factions addons/factions.pbo",
+      "command": "start python3 build.py",
       "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
+      }
+    },
+    {
+      "label": "run-editor",
+      "type": "shell",
+      "command": "start python3 run_client.py",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "run-server",
+      "type": "shell",
+      "command": "start python3 run_server.py",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
       }
     }
   ]

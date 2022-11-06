@@ -10,9 +10,8 @@ cmd = " ".join(
     ]
     + settings.CLIENT_STARTUP_PARAMETERS
     + [
-        "-connect=127.0.0.1",
-        "-password=1986-dev",
-    ],
+        f"{settings.PROJECT_PATH}\mission\mission.sqm",
+    ]
 )
 
 print(cmd)
