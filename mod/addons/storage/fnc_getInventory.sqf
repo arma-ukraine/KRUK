@@ -7,9 +7,7 @@ private _inventory = [];
 
 // items
 private _itemCargo = itemCargo _vehicle;
-if (isNil "_itemCargo") then {
-	_itemCargo = []
-};
+_itemCargo = RETDEF(_itemCargo, []);
 if (GVARMAIN(tfarLoaded)) then {
 	_itemCargo = [_itemCargo] call FUNC(deInstanceTFARRadios);
 };
@@ -18,25 +16,19 @@ _inventory pushBack _itemCargo;
 
 // weapons
 private _weaponCargo = weaponsItemsCargo _vehicle;
-if (isNil "_weaponCargo") then {
-	_weaponCargo = []
-};
+_weaponCargo = RETDEF(_weaponCargo, []);
 _inventory pushBack _weaponCargo;
 
 // magazines
 // try using magazinesAmmo
 private _magazineCargo = getMagazineCargo _vehicle;
-if (isNil "_magazineCargo") then {
-	_magazineCargo = []
-};
+_magazineCargo = RETDEF(_magazineCargo, []);
 _inventory pushBack _magazineCargo;
 
 // backpacks
 private _backpackCargo = [];
 private _backpackItems = everyBackpack _vehicle;
-if (isNil "_backpackItems") then {
-	_backpackItems = []
-};
+_backpackItems = RETDEF(_backpackItems, []);
 {
 	_backpackData = [typeOf _x];
 

@@ -7,13 +7,11 @@ TRACE_1("trace", nil);
 
 params ["_location", "_callback", "_default", "_args"];
 
+_args = RETDEF(_args, []);
+
 // Server only, redirect the call if necessary.
 if (!isServer) exitWith {
-	[_location, _callback, _default] remoteExec [QFUNC(loadState), 2];
-};
-
-if (isNil "_args") then {
-	_args = [];
+	[_location, _callback, _default, _args] remoteExec [QFUNC(loadState), 2];
 };
 
 // We are on server. load state.

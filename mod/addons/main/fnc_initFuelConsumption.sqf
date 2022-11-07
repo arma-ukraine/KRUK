@@ -22,9 +22,7 @@ _kp_max_consumption = 30;
 	do not EDIT BELOW
 */
 
-if (isNil "kp_fuel_consumption_vehicles") then {
-	kp_fuel_consumption_vehicles = [];
-};
+kp_fuel_consumption_vehicles = RETDEF(kp_fuel_consumption_vehicles, []);
 
 if (!((_this select 0) in kp_fuel_consumption_vehicles)) then {
 	kp_fuel_consumption_vehicles pushBack (_this select 0);
