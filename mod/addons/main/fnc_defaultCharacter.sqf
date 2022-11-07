@@ -13,10 +13,10 @@ TRACE_1("trace", nil);
 	["ache", []], // Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg
 	["explosive_specialist", false],
 
-	["aim_coef", 5.0],
-	["recoil_coef", 5.0],
-	["camouflage_coef", 1.0],
-	["audible_coef", 1.0],
+	["aim_coef", 50.0],
+	["recoil_coef", 50.0],
+	["camouflage_coef", 2.0],
+	["audible_coef", 2.0],
 
 	["medic", 0], // 0, 1, 2
 	["engineer", 0] // 0, 1, 2
