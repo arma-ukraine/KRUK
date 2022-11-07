@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9002;
+		nextID=9032;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1206;
+		nextID=1232;
 	};
 	class Camera
 	{
-		pos[]={108.12196,28.168274,17728.652};
-		dir[]={0.92474234,-0.27590159,-0.26240459};
-		up[]={0.26547006,0.96116674,-0.075329989};
-		aside[]={-0.27300054,-1.4365651e-007,-0.96207768};
+		pos[]={519.64154,32.172409,17020.102};
+		dir[]={-0.93686932,-0.2753996,-0.21554267};
+		up[]={-0.26839754,0.96132469,-0.061750159};
+		aside[]={-0.22421403,-2.0273728e-007,0.97455513};
 	};
 };
 binarizationWanted=0;
@@ -608,7 +608,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=650;
+									items=656;
 									class Item0
 									{
 										class data
@@ -5809,6 +5809,54 @@ class CustomAttributes
 											value="kat_breathing_severevalue";
 										};
 									};
+									class Item650
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_viewdistance_viewdistanceonfoot";
+										};
+									};
+									class Item651
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_viewdistance_viewdistancelandvehicle";
+										};
+									};
+									class Item652
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_viewdistance_viewdistanceairvehicle";
+										};
+									};
+									class Item653
+									{
+										class data
+										{
+											singleType="STRING";
+											value="acex_field_rations_hudtype";
+										};
+									};
+									class Item654
+									{
+										class data
+										{
+											singleType="STRING";
+											value="acex_field_rations_hudshowlevel";
+										};
+									};
+									class Item655
+									{
+										class data
+										{
+											singleType="STRING";
+											value="acex_field_rations_hudtransparency";
+										};
+									};
 								};
 							};
 						};
@@ -5819,7 +5867,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=650;
+									items=656;
 									class Item0
 									{
 										class data
@@ -5887,7 +5935,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -15844,7 +15892,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=1.5;
 													};
 												};
 												class Item1
@@ -15871,7 +15919,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=2.0276511;
 													};
 												};
 												class Item1
@@ -15952,7 +16000,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=2.0276511;
 													};
 												};
 												class Item1
@@ -16843,7 +16891,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -16951,7 +16999,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=2;
 													};
 												};
 												class Item1
@@ -17032,7 +17080,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -17977,7 +18025,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -18004,7 +18052,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=2;
+														value=0;
 													};
 												};
 												class Item1
@@ -19489,7 +19537,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -20002,7 +20050,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -20677,7 +20725,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -20758,7 +20806,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -20785,7 +20833,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -22054,7 +22102,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -22216,7 +22264,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -22702,7 +22750,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="BOOL";
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -23391,6 +23439,168 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item650
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=800;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item651
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=800;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item652
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=800;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item653
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item654
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=70;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item655
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=0.80000001;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -23430,7 +23640,7 @@ class Mission
 		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0.79564166;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
@@ -23439,9 +23649,8 @@ class Mission
 		year=2022;
 		month=8;
 		day=9;
-		hour=12;
-		minute=-15;
-		startFogBase=250;
+		hour=0;
+		minute=0;
 		forecastFogBase=250;
 		startFogDecay=0.02;
 		forecastFogDecay=0.02;
@@ -23479,7 +23688,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=325;
+		items=328;
 		class Item0
 		{
 			dataType="Logic";
@@ -23550,12 +23759,12 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={480.74066,20.175171,17039.502};
+			position[]={507.94733,22.139404,17027.193};
 			name="respawn_INDEPENDENT";
 			type="Empty";
-			angle=135.1532;
+			angle=328.46182;
 			id=2836;
-			atlOffset=-5.0211811;
+			atlOffset=-5.2553291;
 		};
 		class Item2
 		{
@@ -23973,7 +24182,7 @@ class Mission
 			name="Camp Site";
 			class Entities
 			{
-				items=24;
+				items=25;
 				class Item0
 				{
 					dataType="Object";
@@ -24262,10 +24471,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.63599,26.700388,17010.367};
+						position[]={506.418,27.657427,17034.6};
 						angles[]={0,2.3825488,0};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						skill=0.2;
@@ -24273,7 +24483,7 @@ class Mission
 					};
 					id=8661;
 					type="Land_LuggageHeap_02_F";
-					atlOffset=0.66900063;
+					atlOffset=0.17900276;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24388,8 +24598,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.59189,26.421099,17008.559};
-						angles[]={0,4.2957788,0};
+						position[]={481.32764,26.4158,17009.623};
+						angles[]={-0,4.2957788,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24400,7 +24610,7 @@ class Mission
 					};
 					id=8662;
 					type="Land_Can_Dented_F";
-					atlOffset=0.61816597;
+					atlOffset=0.63291359;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24710,8 +24920,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.69516,26.421099,17008.477};
-						angles[]={0,3.3831344,0};
+						position[]={481.43091,26.415802,17009.541};
+						angles[]={-0,3.3831344,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24722,7 +24932,7 @@ class Mission
 					};
 					id=8671;
 					type="Land_Can_Dented_F";
-					atlOffset=0.61943626;
+					atlOffset=0.63418388;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24746,8 +24956,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.51889,26.421099,17008.508};
-						angles[]={0,2.0184557,0};
+						position[]={481.25464,26.415802,17009.572};
+						angles[]={-0,2.0184557,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24758,7 +24968,7 @@ class Mission
 					};
 					id=8672;
 					type="Land_Can_Dented_F";
-					atlOffset=0.61426735;
+					atlOffset=0.62901497;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24782,8 +24992,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.60007,26.431057,17008.98};
-						angles[]={0,0.0003422992,0};
+						position[]={481.33582,26.425762,17010.045};
+						angles[]={-0,0.0003422992,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24794,7 +25004,7 @@ class Mission
 					};
 					id=8673;
 					type="Land_Pillow_F";
-					atlOffset=0.62991333;
+					atlOffset=0.64466286;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24818,10 +25028,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={482.55472,26.489134,17009.111};
-						angles[]={0,5.8032551,0};
+						position[]={482.29047,26.50634,17010.176};
+						angles[]={-0,5.8032551,0};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						skill=0.2;
@@ -24830,7 +25041,7 @@ class Mission
 					};
 					id=8674;
 					type="Land_GasCooker_F";
-					atlOffset=0.66599083;
+					atlOffset=0.017023087;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24854,8 +25065,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={482.31113,26.449308,17009.07};
-						angles[]={0,5.8034115,0};
+						position[]={482.04688,26.449043,17010.135};
+						angles[]={-0,5.8034115,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24866,7 +25077,7 @@ class Mission
 					};
 					id=8675;
 					type="Land_GasCanister_F";
-					atlOffset=0.6566391;
+					atlOffset=0.67138672;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24890,8 +25101,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={482.34958,26.449308,17008.682};
-						angles[]={0,5.8034115,0};
+						position[]={482.08533,26.444014,17009.746};
+						angles[]={-0,5.8034115,0};
 					};
 					side="Empty";
 					class Attributes
@@ -24902,7 +25113,43 @@ class Mission
 					};
 					id=8676;
 					type="Land_GasCanister_F";
-					atlOffset=0.64731598;
+					atlOffset=0.66206551;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item24
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={514.00525,26.965691,17009.752};
+						angles[]={0.036389608,5.7895756,6.2718072};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+						createAsSimpleObject=1;
+						disableSimulation=1;
+					};
+					id=9031;
+					type="Land_WoodenLog_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24923,7 +25170,7 @@ class Mission
 				};
 			};
 			id=3808;
-			atlOffset=0.65028;
+			atlOffset=0.32951927;
 		};
 		class Item6
 		{
@@ -35533,8 +35780,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={489.08701,26.433041,17025.336};
-						angles[]={0,4.6806765,0};
+						position[]={500.4028,27.195986,17017.08};
+						angles[]={0,5.8806996,-0};
 					};
 					side="Civilian";
 					flags=3;
@@ -35546,7 +35793,7 @@ class Mission
 					};
 					id=8640;
 					type="C_man_1";
-					atlOffset=0.60100174;
+					atlOffset=0.60116005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35610,7 +35857,7 @@ class Mission
 				name="zeus";
 			};
 			id=8639;
-			atlOffset=0.60100174;
+			atlOffset=0.60116005;
 		};
 		class Item153
 		{
@@ -35685,7 +35932,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={480.95438,26.513691,17009.5};
+				position[]={480.69012,26.508396,17010.564};
 			};
 			side="Empty";
 			class Attributes
@@ -35695,7 +35942,7 @@ class Mission
 			};
 			id=8679;
 			type="Land_Sleeping_bag_blue_folded_F";
-			atlOffset=0.62192917;
+			atlOffset=0.6366787;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35719,10 +35966,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={481.95218,26.513691,17009.438};
-				angles[]={0,0.8777622,0};
+				position[]={481.68793,26.51392,17010.502};
+				angles[]={-0,0.8777622,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
@@ -35730,7 +35978,6 @@ class Mission
 			};
 			id=8680;
 			type="Land_Sleeping_bag_brown_folded_F";
-			atlOffset=0.65428543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -38053,7 +38300,7 @@ class Mission
 				onActivation="{_x addRating -1000000;} forEach thisList;";
 				sizeA=2.098;
 				sizeB=2.4219999;
-				timeout[]={5,5,5};
+				timeout[]={1,1,1};
 				repeatable=1;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
@@ -38071,7 +38318,7 @@ class Mission
 				onActivation="{_x addRating -1000000;} forEach thisList;";
 				sizeA=1.874;
 				sizeB=2.431;
-				timeout[]={5,5,5};
+				timeout[]={1,1,1};
 				repeatable=1;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
@@ -39279,16 +39526,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={484.12543,26.988216,17011.709};
-				angles[]={0,2.733685,0};
+				position[]={514.00525,27.307129,17009.746};
+				angles[]={0.036389608,5.7212539,6.2717967};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=8788;
 			type="Land_FMradio_F";
-			atlOffset=0.52147675;
 		};
 		class Item241
 		{
@@ -41288,8 +41535,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={506.53101,28.110411,17034.908};
-				angles[]={0,2.3179018,0};
+				position[]={506.56085,28.110918,17036.869};
+				angles[]={-0,0.80460465,0};
 			};
 			side="Empty";
 			flags=4;
@@ -41299,7 +41546,6 @@ class Mission
 			};
 			id=8862;
 			type="Land_CratesShabby_F";
-			atlOffset=0.18800163;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42850,7 +43096,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this, vasyl_shop_box, [ " \n " [""hgun_Pistol_01_F"", [""Weapon"", 785, 1, 1]], " \n " [""10Rnd_9x21_Mag"", [""Magazine"", 340, 1, 1]]," \n " [""greenmag_ammo_9x21_basic_30Rnd"", [""Item"", 556, 1, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
+				init="[this, vasyl_shop_box, [ " \n " [""hgun_Pistol_01_F"", [""Weapon"", 1320, 1, 1]], " \n " [""10Rnd_9x21_Mag"", [""Magazine"", 340, 1, 1]]," \n " [""greenmag_ammo_9x21_basic_30Rnd"", [""Item"", 556, 1, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
 			};
 			id=8714;
 			type="rhs_3Ya40_1_single";
@@ -42868,7 +43114,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this, vasyl_shop_box, [ " \n " [""ACE_fieldDressing"", [""Item"", 38, 3, 5]], " \n " [""ACE_Humanitarian_Ration"", [""Item"", 23, 10, 1]]," \n " [""ACE_WaterBottle"", [""Item"", 23, 10, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
+				init="[this, vasyl_shop_box, [ " \n " [""ACE_fieldDressing"", [""Item"", 38, 3, 5]], " \n " [""ACE_Humanitarian_Ration"", [""Item"", 23, 10, 1]]," \n " [""ACE_WaterBottle"", [""Item"", 78, 10, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
 			};
 			id=8776;
 			type="rhs_3Ya40_1_single";
@@ -42946,37 +43192,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={794.20306,29.341858,17012.961};
-						angles[]={0,3.6382375,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=8949;
-					type="O_OMovariMrazota_Hybrid_01";
-					atlOffset=1.9073486e-006;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=8948;
-			atlOffset=1.9073486e-006;
-		};
-		class Item299
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={795.50232,29.36035,17010.332};
 						angles[]={0,4.5200715,0};
 					};
@@ -42996,7 +43211,7 @@ class Mission
 			id=8951;
 			atlOffset=1.335144e-005;
 		};
-		class Item300
+		class Item299
 		{
 			dataType="Group";
 			side="East";
@@ -43024,7 +43239,7 @@ class Mission
 			};
 			id=8952;
 		};
-		class Item301
+		class Item300
 		{
 			dataType="Group";
 			side="East";
@@ -43053,7 +43268,7 @@ class Mission
 			};
 			id=8959;
 		};
-		class Item302
+		class Item301
 		{
 			dataType="Group";
 			side="East";
@@ -43082,7 +43297,7 @@ class Mission
 			};
 			id=8960;
 		};
-		class Item303
+		class Item302
 		{
 			dataType="Group";
 			side="East";
@@ -43111,7 +43326,7 @@ class Mission
 			};
 			id=8961;
 		};
-		class Item304
+		class Item303
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43126,7 +43341,7 @@ class Mission
 			id=8963;
 			type="ACE_WaterBottle_Item";
 		};
-		class Item305
+		class Item304
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43141,7 +43356,7 @@ class Mission
 			id=8964;
 			type="ACE_WaterBottle_Item";
 		};
-		class Item306
+		class Item305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43156,7 +43371,7 @@ class Mission
 			type="ACE_WaterBottle_Empty_Item";
 			atlOffset=0.72799301;
 		};
-		class Item307
+		class Item306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43171,7 +43386,7 @@ class Mission
 			id=8966;
 			type="ACE_WaterBottle_Half_Item";
 		};
-		class Item308
+		class Item307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43186,7 +43401,7 @@ class Mission
 			id=8967;
 			type="ACE_MRE_ChickenTikkaMasala_Item";
 		};
-		class Item309
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43202,7 +43417,7 @@ class Mission
 			id=8968;
 			type="ACE_MRE_ChickenTikkaMasala_Item";
 		};
-		class Item310
+		class Item309
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43217,7 +43432,7 @@ class Mission
 			id=8969;
 			type="ACE_MRE_CreamChickenSoup_Item";
 		};
-		class Item311
+		class Item310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43233,7 +43448,7 @@ class Mission
 			id=8970;
 			type="ACE_MRE_CreamChickenSoup_Item";
 		};
-		class Item312
+		class Item311
 		{
 			dataType="Group";
 			side="Independent";
@@ -43302,7 +43517,7 @@ class Mission
 			};
 			id=8971;
 		};
-		class Item313
+		class Item312
 		{
 			dataType="Group";
 			side="Independent";
@@ -43371,7 +43586,7 @@ class Mission
 			};
 			id=8973;
 		};
-		class Item314
+		class Item313
 		{
 			dataType="Group";
 			side="Independent";
@@ -43440,7 +43655,7 @@ class Mission
 			};
 			id=8975;
 		};
-		class Item315
+		class Item314
 		{
 			dataType="Group";
 			side="Independent";
@@ -43509,7 +43724,7 @@ class Mission
 			};
 			id=8977;
 		};
-		class Item316
+		class Item315
 		{
 			dataType="Group";
 			side="Independent";
@@ -43578,7 +43793,7 @@ class Mission
 			};
 			id=8979;
 		};
-		class Item317
+		class Item316
 		{
 			dataType="Group";
 			side="Independent";
@@ -43647,7 +43862,7 @@ class Mission
 			};
 			id=8981;
 		};
-		class Item318
+		class Item317
 		{
 			dataType="Group";
 			side="Independent";
@@ -43716,7 +43931,7 @@ class Mission
 			};
 			id=8983;
 		};
-		class Item319
+		class Item318
 		{
 			dataType="Group";
 			side="Independent";
@@ -43785,7 +44000,7 @@ class Mission
 			};
 			id=8985;
 		};
-		class Item320
+		class Item319
 		{
 			dataType="Group";
 			side="Independent";
@@ -43854,7 +44069,7 @@ class Mission
 			};
 			id=8987;
 		};
-		class Item321
+		class Item320
 		{
 			dataType="Group";
 			side="Independent";
@@ -43923,13 +44138,13 @@ class Mission
 			};
 			id=8989;
 		};
-		class Item322
+		class Item321
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={558.98004,29.443472,17175.408};
-				angles[]={0,4.6912994,-0};
+				angles[]={0,4.6912994,0};
 			};
 			side="Empty";
 			flags=5;
@@ -43939,7 +44154,7 @@ class Mission
 			id=8992;
 			type="Land_WaterTank_04_F";
 		};
-		class Item323
+		class Item322
 		{
 			dataType="Group";
 			side="East";
@@ -43952,7 +44167,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={588.21765,28.428387,17186.018};
-						angles[]={0,3.6638186,-0};
+						angles[]={0,3.6638186,0};
 					};
 					side="East";
 					flags=7;
@@ -43968,7 +44183,7 @@ class Mission
 			};
 			id=8997;
 		};
-		class Item324
+		class Item323
 		{
 			dataType="Group";
 			side="East";
@@ -43981,7 +44196,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={587.76477,28.267902,17184.537};
-						angles[]={0,0.31114286,-0};
+						angles[]={0,0.31114286,0};
 					};
 					side="East";
 					flags=7;
@@ -43996,6 +44211,1181 @@ class Mission
 			{
 			};
 			id=8999;
+		};
+		class Item324
+		{
+			dataType="Layer";
+			name="Vasyl_Ambush";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={20.777725,28.051426,17350.242};
+								angles[]={0,1.014262,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9023;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9022;
+				};
+				class Item1
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={106.2676,23.620024,17471.908};
+								angles[]={0,1.4090643,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9003;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9002;
+				};
+				class Item2
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={290.60056,18.277246,17473.604};
+								angles[]={0,1.4359572,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9005;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9004;
+				};
+				class Item3
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={161.57555,25.138929,17357.477};
+								angles[]={0,0.48674569,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9007;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male09ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=4;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9006;
+				};
+				class Item4
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={109.851,22.595079,17443.35};
+								angles[]={0,1.3166673,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9011;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9010;
+				};
+				class Item5
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={141.78914,27.400688,17350.936};
+								angles[]={0,5.104394,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9013;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9012;
+				};
+				class Item6
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={335.92307,18.100607,17555.219};
+								angles[]={0,1.4163653,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9015;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9014;
+				};
+				class Item7
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={352.94403,18.101364,17549.633};
+								angles[]={0,1.4163653,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9017;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9016;
+				};
+				class Item8
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={331.9527,18.301205,17476.82};
+								angles[]={0,4.6296158,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9019;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9018;
+				};
+				class Item9
+				{
+					dataType="Group";
+					side="East";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={50.207172,26.514505,17344.984};
+								angles[]={0,0.87314534,0};
+							};
+							side="East";
+							flags=7;
+							class Attributes
+							{
+								skill=1;
+								presence=0.50007737;
+								stance="Down";
+							};
+							id=9021;
+							type="O_OMovariMrazota_Rusher_Fists_01";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_AmbientAnimations";
+									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					class Attributes
+					{
+						garbageCollect=1;
+						speedMode="LIMITED";
+						dynamicSimulation=1;
+					};
+					id=9020;
+				};
+			};
+			id=9024;
+			atlOffset=2.9498138;
+		};
+		class Item325
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={984.14099,25.141319,16851.025};
+						angles[]={0,5.7553105,0};
+					};
+					side="East";
+					flags=3;
+					class Attributes
+					{
+					};
+					id=9025;
+					type="O_OMovariMrazota_Hybrid_01";
+					atlOffset=0.88399887;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+				behaviour="SAFE";
+			};
+			id=9026;
+			atlOffset=0.88399887;
+		};
+		class Item326
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={792.6767,29.44265,17010.535};
+						angles[]={0,1.9031975,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9028;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=0.00018882751;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9027;
+			atlOffset=0.00018882751;
+		};
+		class Item327
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={794.38263,29.430027,17008.445};
+						angles[]={0,0.014661971,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9030;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9029;
 		};
 	};
 	class Connections
