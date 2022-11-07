@@ -20,10 +20,9 @@ _weaponCargo = RETDEF(_weaponCargo, []);
 _inventory pushBack _weaponCargo;
 
 // magazines
-// try using magazinesAmmo
-private _magazineCargo = getMagazineCargo _vehicle;
-_magazineCargo = RETDEF(_magazineCargo, []);
-_inventory pushBack _magazineCargo;
+private _magazinesAmmoCargo = magazinesAmmoCargo _vehicle;
+_magazinesAmmoCargo = RETDEF(_magazinesAmmoCargo, []);
+_inventory pushBack _magazinesAmmoCargo;
 
 // backpacks
 private _backpackCargo = [];

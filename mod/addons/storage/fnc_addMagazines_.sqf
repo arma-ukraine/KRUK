@@ -1,8 +1,9 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
 
+systemChat str _magazineData;
+
 params ["_magazineData", "_container"];
-_magazineData params ["_magazineClassNames", "_magazineCounts"];
 {
-	_container addMagazineCargoGlobal [_x, _magazineCounts select _forEachIndex];
-} forEach _magazineClassNames;
+	_container addMagazineAmmoCargo [_x#0, 1, _x#1];
+} forEach _magazineData;
