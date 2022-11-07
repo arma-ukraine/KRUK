@@ -15,4 +15,4 @@ cmd = " ".join(
 )
 
 print(cmd)
-os.system(cmd)
+os.system(f"start {cmd}")
