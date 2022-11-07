@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1665;
 	mods[]=
 	{
 		"WBK_Zombies_AdvancedEditorSettings",
@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={508.22495,30.195015,17016.564};
-		dir[]={-0.91761798,-0.33233121,0.21802124};
-		up[]={-0.32333031,0.9431628,0.076821595};
-		aside[]={0.23115975,0,0.97291589};
+		pos[]={507.26236,31.709703,17016.336};
+		dir[]={-0.62700784,-0.65779114,0.41734299};
+		up[]={-0.54758155,0.75320047,0.36447611};
+		aside[]={0.55409247,2.1001324e-007,0.83245635};
 	};
 };
 binarizationWanted=0;
@@ -23759,12 +23759,12 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={507.94733,22.139404,17027.193};
+			position[]={505.06387,22.131348,17029.822};
 			name="respawn_INDEPENDENT";
 			type="Empty";
 			angle=328.46182;
 			id=2836;
-			atlOffset=-5.2553291;
+			atlOffset=-5.2709217;
 		};
 		class Item2
 		{
