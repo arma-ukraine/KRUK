@@ -12,6 +12,10 @@ if (!isServer) exitWith {
 	[_location, _callback, _default] remoteExec [QFUNC(loadState), 2];
 };
 
+if (isNil "_args") then {
+	_args = [];
+};
+
 // We are on server. load state.
 private _state = ["src.state.load", [_location]] call py3_fnc_callExtension;
 
