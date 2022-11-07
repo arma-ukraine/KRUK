@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=8991;
+		nextID=9002;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1194;
+		nextID=1206;
 	};
 	class Camera
 	{
-		pos[]={480.29929,28.508528,17005.514};
-		dir[]={0.12768237,-0.3251515,0.93701375};
-		up[]={0.043901835,0.94566166,0.32217759};
-		aside[]={0.99084973,3.7398422e-008,-0.1350196};
+		pos[]={108.12196,28.168274,17728.652};
+		dir[]={0.92474234,-0.27590159,-0.26240459};
+		up[]={0.26547006,0.96116674,-0.075329989};
+		aside[]={-0.27300054,-1.4365651e-007,-0.96207768};
 	};
 };
 binarizationWanted=0;
@@ -127,13 +127,14 @@ addons[]=
 	"rhsgref_c_weapons",
 	"ace_compat_rhs_gref3",
 	"A3_Characters_F_Enoch",
-	"ace_field_rations"
+	"ace_field_rations",
+	"A3_Structures_F_Exp_Infrastructure_WaterSupply"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=59;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -511,6 +512,13 @@ class AddonsMetaData
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item58
+		{
+			className="A3_Structures_F_Exp_Infrastructure";
+			name="Arma 3 Apex - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -23471,7 +23479,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=323;
+		items=325;
 		class Item0
 		{
 			dataType="Logic";
@@ -42842,7 +42850,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this, vasyl_shop_box, [ " \n " [""hgun_Pistol_01_F"", [""Weapon"", 385, 1, 1]], " \n " [""10Rnd_9x21_Mag"", [""Magazine"", 112, 2, 1]]," \n " [""greenmag_ammo_9x21_basic_30Rnd"", [""Item"", 165, 2, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
+				init="[this, vasyl_shop_box, [ " \n " [""hgun_Pistol_01_F"", [""Weapon"", 785, 1, 1]], " \n " [""10Rnd_9x21_Mag"", [""Magazine"", 340, 1, 1]]," \n " [""greenmag_ammo_9x21_basic_30Rnd"", [""Item"", 556, 1, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
 			};
 			id=8714;
 			type="rhs_3Ya40_1_single";
@@ -43105,35 +43113,6 @@ class Mission
 		};
 		class Item304
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={584.93994,29.064936,17192.178};
-						angles[]={0,3.2106371,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=8953;
-					type="O_OMovariMrazota_Shooter_Handgun_01";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=8962;
-		};
-		class Item305
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -43147,7 +43126,7 @@ class Mission
 			id=8963;
 			type="ACE_WaterBottle_Item";
 		};
-		class Item306
+		class Item305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43162,7 +43141,7 @@ class Mission
 			id=8964;
 			type="ACE_WaterBottle_Item";
 		};
-		class Item307
+		class Item306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43177,7 +43156,7 @@ class Mission
 			type="ACE_WaterBottle_Empty_Item";
 			atlOffset=0.72799301;
 		};
-		class Item308
+		class Item307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43192,7 +43171,7 @@ class Mission
 			id=8966;
 			type="ACE_WaterBottle_Half_Item";
 		};
-		class Item309
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43207,7 +43186,7 @@ class Mission
 			id=8967;
 			type="ACE_MRE_ChickenTikkaMasala_Item";
 		};
-		class Item310
+		class Item309
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43223,7 +43202,7 @@ class Mission
 			id=8968;
 			type="ACE_MRE_ChickenTikkaMasala_Item";
 		};
-		class Item311
+		class Item310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43238,7 +43217,7 @@ class Mission
 			id=8969;
 			type="ACE_MRE_CreamChickenSoup_Item";
 		};
-		class Item312
+		class Item311
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43254,7 +43233,7 @@ class Mission
 			id=8970;
 			type="ACE_MRE_CreamChickenSoup_Item";
 		};
-		class Item313
+		class Item312
 		{
 			dataType="Group";
 			side="Independent";
@@ -43323,7 +43302,7 @@ class Mission
 			};
 			id=8971;
 		};
-		class Item314
+		class Item313
 		{
 			dataType="Group";
 			side="Independent";
@@ -43392,7 +43371,7 @@ class Mission
 			};
 			id=8973;
 		};
-		class Item315
+		class Item314
 		{
 			dataType="Group";
 			side="Independent";
@@ -43461,7 +43440,7 @@ class Mission
 			};
 			id=8975;
 		};
-		class Item316
+		class Item315
 		{
 			dataType="Group";
 			side="Independent";
@@ -43530,7 +43509,7 @@ class Mission
 			};
 			id=8977;
 		};
-		class Item317
+		class Item316
 		{
 			dataType="Group";
 			side="Independent";
@@ -43599,7 +43578,7 @@ class Mission
 			};
 			id=8979;
 		};
-		class Item318
+		class Item317
 		{
 			dataType="Group";
 			side="Independent";
@@ -43668,7 +43647,7 @@ class Mission
 			};
 			id=8981;
 		};
-		class Item319
+		class Item318
 		{
 			dataType="Group";
 			side="Independent";
@@ -43737,7 +43716,7 @@ class Mission
 			};
 			id=8983;
 		};
-		class Item320
+		class Item319
 		{
 			dataType="Group";
 			side="Independent";
@@ -43806,7 +43785,7 @@ class Mission
 			};
 			id=8985;
 		};
-		class Item321
+		class Item320
 		{
 			dataType="Group";
 			side="Independent";
@@ -43875,7 +43854,7 @@ class Mission
 			};
 			id=8987;
 		};
-		class Item322
+		class Item321
 		{
 			dataType="Group";
 			side="Independent";
@@ -43943,6 +43922,80 @@ class Mission
 			{
 			};
 			id=8989;
+		};
+		class Item322
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={558.98004,29.443472,17175.408};
+				angles[]={0,4.6912994,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=8992;
+			type="Land_WaterTank_04_F";
+		};
+		class Item323
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={588.21765,28.428387,17186.018};
+						angles[]={0,3.6638186,-0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=8998;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8997;
+		};
+		class Item324
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={587.76477,28.267902,17184.537};
+						angles[]={0,0.31114286,-0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9000;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8999;
 		};
 	};
 	class Connections
