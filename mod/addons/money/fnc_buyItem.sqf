@@ -31,19 +31,19 @@ _target setVariable [QGVAR(shop), _shop, true];
 switch (_category) do
 {
 	case "Weapon": {
-		_target_inventory addWeaponCargo [_classname, _amount_in_batch];
+		_target_inventory addWeaponCargoGlobal [_classname, _amount_in_batch];
 		_display_name = getText (configFile >> "CfgWeapons" >> _classname >> "DisplayName");
 	};
 	case "Magazine": {
-		_target_inventory addMagazineCargo [_classname, _amount_in_batch];
+		_target_inventory addMagazineCargoGlobal [_classname, _amount_in_batch];
 		_display_name = getText (configFile >> "CfgMagazines" >> _classname >> "DisplayName");
 	};
 	case "Backpack": {
-		_target_inventory addBackpackCargo [_classname, _amount_in_batch];
+		_target_inventory addBackpackCargoGlobal [_classname, _amount_in_batch];
 		_display_name = getText (configFile >> "CfgWeapons" >> _classname >> "DisplayName");
 	};
 	default {
-		_target_inventory addItemCargo [_classname, _amount_in_batch];
+		_target_inventory addItemCargoGlobal [_classname, _amount_in_batch];
 		_display_name = getText (configFile >> "CfgWeapons" >> _classname >> "DisplayName");
 	};
 };
