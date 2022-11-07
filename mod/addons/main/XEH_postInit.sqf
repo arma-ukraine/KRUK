@@ -21,4 +21,5 @@ if (hasInterface) then {
 	call FUNC(initFuelConsumption);
 	(getPlayerUID player) call FUNC(loadCharacter);
 	call FUNC(initColorCorrection);
+	call FUNC(initRespawn);
 };

@@ -9,6 +9,7 @@ PREP(loadCharacter);
 PREP(saveCharacter);
 PREP(moduleSaveCharacter);
 PREP(moduleLoadCharacter);
+PREP(initRespawn);
 
 // vehicle limitations.
 PREP(initVehicleLimitations);
