@@ -7,10 +7,7 @@ private _target_inventory = _target getVariable QGVAR(target_inventory);
 private _shop = _target getVariable QGVAR(shop);
 private _item = _shop get _classname;
 
-private _category = _item#0;
-private _price = _item#1;
-private _stock_batches = _item#2;
-private _amount_in_batch = _item#3;
+_item params ["_category", "_price", "_stock_batches", "_amount_in_batch"];
 private _display_name = "";
 
 // Check if item is in stock, exit if none available.
@@ -35,7 +32,7 @@ switch (_category) do
 		_display_name = getText (configFile >> "CfgWeapons" >> _classname >> "DisplayName");
 	};
 	case "Magazine": {
-		_target_inventory addMagazineCargoGlobal [_classname, _amount_in_batch];
+		_target_inventory addMagazineAmmoCargo [_classname, _amount_in_batch, 0];
 		_display_name = getText (configFile >> "CfgMagazines" >> _classname >> "DisplayName");
 	};
 	case "Backpack": {
