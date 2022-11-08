@@ -1,1 +1,28 @@
-{"data": ["rhs_3Ya40_1_single", [[["ItemMap", "ItemCompass", "ItemWatch", "ACE_WaterBottle", "ACE_MRE_SteakVegetables", "Uah_500"], [10, 10, 10, 10, 15, 2]], [], [], []]]}
+{
+  "data": [
+    "rhs_3Ya40_1_single",
+    [
+      [
+        [
+          "ItemMap",
+          "ItemCompass",
+          "ItemWatch",
+          "ACE_WaterBottle",
+          "ACE_MRE_SteakVegetables",
+          "JAGER_money_Uah_500"
+        ],
+        [
+          10,
+          10,
+          10,
+          10,
+          15,
+          2
+        ]
+      ],
+      [],
+      [],
+      []
+    ]
+  ]
+}

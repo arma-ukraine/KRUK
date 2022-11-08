@@ -2,7 +2,7 @@ class cfgWeapons
 {
   class ItemCore;
   class InventoryItem_Base_F;
-  class Uah : ItemCore
+  class GVAR(Uah) : ItemCore
   {
     scope = 1;
     displayName = "-";
@@ -18,7 +18,7 @@ class cfgWeapons
       mass = 0.01;
     };
   };
-  class Uah_1 : Uah
+  class GVAR(Uah_1) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 1 грн";
@@ -26,7 +26,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 1 гривня.";
     value = 1;
   };
-  class Uah_2 : Uah
+  class GVAR(Uah_2) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 2 грн";
@@ -34,7 +34,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 2 гривні.";
     value = 2;
   };
-  class Uah_5 : Uah
+  class GVAR(Uah_5) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 5 грн";
@@ -42,7 +42,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 5 гривень.";
     value = 5;
   };
-  class Uah_10 : Uah
+  class GVAR(Uah_10) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 10 грн";
@@ -50,7 +50,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 10 гривень.";
     value = 10;
   };
-  class Uah_20 : Uah
+  class GVAR(Uah_20) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 20 грн";
@@ -58,7 +58,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 20 гривень.";
     value = 20;
   };
-  class Uah_50 : Uah
+  class GVAR(Uah_50) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 50 грн";
@@ -66,7 +66,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 50 гривень.";
     value = 50;
   };
-  class Uah_100 : Uah
+  class GVAR(Uah_100) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 100 грн";
@@ -74,7 +74,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 100 гривень.";
     value = 100;
   };
-  class Uah_200 : Uah
+  class GVAR(Uah_200) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 200 грн";
@@ -82,7 +82,7 @@ class cfgWeapons
     descriptionShort = "Банкнота номіналом 200 гривень.";
     value = 200;
   };
-  class Uah_500 : Uah
+  class GVAR(Uah_500) : GVAR(Uah)
   {
     scope = 2;
     displayName = "Банкнота 500 грн";
