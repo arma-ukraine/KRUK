@@ -11,7 +11,7 @@ cmd = " ".join(
     + settings.CLIENT_STARTUP_PARAMETERS
     + [
         "-connect=127.0.0.1",
-        "-password=1986-dev",
+        "-password=1986",
     ],
 )
 
