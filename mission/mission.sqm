@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1665;
+	toggles=1537;
 	mods[]=
 	{
 		"WBK_Zombies_AdvancedEditorSettings",
@@ -13,22 +13,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9032;
+		nextID=9035;
 	};
 	class MarkerIDProvider
 	{
-		nextID=21;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1245;
+		nextID=1258;
 	};
 	class Camera
 	{
-		pos[]={507.26236,31.709703,17016.336};
-		dir[]={-0.62700784,-0.65779114,0.41734299};
-		up[]={-0.54758155,0.75320047,0.36447611};
-		aside[]={0.55409247,2.1001324e-007,0.83245635};
+		pos[]={871.034,65.396721,16005.824};
+		dir[]={0.86446923,-0.47181416,0.17344846};
+		up[]={0.46259466,0.88169795,0.09281572};
+		aside[]={0.19672093,0,-0.98045945};
 	};
 };
 binarizationWanted=0;
@@ -23649,8 +23649,8 @@ class Mission
 		year=2022;
 		month=8;
 		day=9;
-		hour=0;
-		minute=0;
+		hour=11;
+		minute=13;
 		forecastFogBase=250;
 		startFogDecay=0.02;
 		forecastFogDecay=0.02;
@@ -23688,7 +23688,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=328;
+		items=330;
 		class Item0
 		{
 			dataType="Logic";
@@ -39244,7 +39244,7 @@ class Mission
 									class data
 									{
 										singleType="SCALAR";
-										value=1;
+										value=21;
 									};
 								};
 								class Item1
@@ -45384,6 +45384,30 @@ class Mission
 			{
 			};
 			id=9029;
+		};
+		class Item328
+		{
+			dataType="Marker";
+			position[]={10534.467,25.307745,9107.1963};
+			name="marker_21";
+			markerType="RECTANGLE";
+			type="";
+			a=7528.5996;
+			b=9181.499;
+			id=9032;
+			atlOffset=21.734303;
+		};
+		class Item329
+		{
+			dataType="Marker";
+			position[]={1508.0959,36.731987,7588.8364};
+			name="marker_22";
+			markerType="RECTANGLE";
+			type="";
+			a=1497.7698;
+			b=7648.166;
+			id=9034;
+			atlOffset=27.964302;
 		};
 	};
 	class Connections
