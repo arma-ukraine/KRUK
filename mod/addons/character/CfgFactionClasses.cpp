@@ -1,8 +1,8 @@
 class CfgFactionClasses
 {
-  class GVAR(Persistence)
+  class GVAR(Characters)
   {
-    displayName = "JAGER Persistence";
+    displayName = "JAGER Characters";
     priority = 2;
     side = 7;
   };

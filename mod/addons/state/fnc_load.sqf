@@ -23,7 +23,7 @@ if (isNil "_state") then {
 	_state = _default;
 
 	// Save default state.
-	[_location, _state] call FUNC(saveState);
+	[_location, _state] call FUNC(save);
 };
 
 // if call was initiated by remote entity, run callback there.

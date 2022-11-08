@@ -9,7 +9,7 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"CBA_main"};
+    requiredAddons[] = {"CBA_main", "PY3_Pythia"};
     units[] = {};
     weapons[] = {};
   };

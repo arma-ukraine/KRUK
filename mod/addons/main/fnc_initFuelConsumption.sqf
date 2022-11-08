@@ -2,9 +2,7 @@
 TRACE_1("trace", nil);
 
 // Client only.
-if (!hasInterface) exitWith {
-	WARNING("initFuelConsumption script should only be called on clients.");
-};
+if (!hasInterface) exitWith {};
 
 private ["_kp_neutral_consumption", "_kp_normal_consumption", "_kp_max_consumption"];
 

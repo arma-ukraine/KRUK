@@ -8,7 +8,7 @@ params ["_location", "_state"];
 
 // Server only. Redirect the call if necessary.
 if (!isServer) exitWith {
-	[_location, _state] remoteExec [QFUNC(saveState), 2];
+	[_location, _state] remoteExec [QFUNC(save), 2];
 };
 
 // Save data.

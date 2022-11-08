@@ -18,7 +18,7 @@ _inventory = _obj call FUNC(getInventory);
 
 // Pass data structure to the server for it to be saved.
 private _location = format ["%1/storage_%2", getPlayerUID player, _tag];
-[_location, [typeOf _obj, _inventory]] call JAGER_main_fnc_saveState;
+[_location, [typeOf _obj, _inventory]] call JAGER_state_fnc_save;
 
 // Delete in-game object.
 deleteVehicle _obj;

@@ -8,9 +8,9 @@ GVAR(character) = createHashMapFromArray call {
 };
 
 // Whitelist.
-if (!(GVAR(character) get "whitelisted")) exitWith {
-	endMission "Whitelist";
-};
+// if (!(GVAR(character) get "whitelisted")) exitWith {
+// 	endMission "Whitelist";
+// };
 
 // Ache.
 {

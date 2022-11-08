@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
 
-// Clients only.
+// Client only.
 if (!hasInterface) exitWith {};
 
 GVAR(ColorCorrection) = ppEffectCreate ["colorCorrections", 1501];

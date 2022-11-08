@@ -56,9 +56,9 @@ if (_uid == _local_uid) exitWith {
 
 	private _data = GVAR(character) toArray	false;
 
-	[_location, _data] call JAGER_main_fnc_saveState;
+	[_location, _data] call JAGER_state_fnc_save;
 };
 
 if (_uid != _local_uid) exitWith {
-	[_uid] remoteExec [QFUNC(saveCharacter), _uid call BIS_fnc_getUnitByUID];
+	[_uid] remoteExec [QFUNC(save), _uid call BIS_fnc_getUnitByUID];
 };

@@ -1,5 +1,5 @@
 #define PREFIX JAGER
-#define COMPONENT main
+#define COMPONENT character
  
 #define DEBUG_MODE_FULL
 

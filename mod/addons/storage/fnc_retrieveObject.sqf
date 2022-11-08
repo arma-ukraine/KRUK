@@ -14,7 +14,7 @@ if (!(isNil "_obj")) exitWith {
 
 // Retrieve item.
 private _location = format ["%1/storage_%2", getPlayerUID player, _tag];
-[_location, QFUNC(initObject), [], [_ops_location]] call JAGER_main_fnc_loadState;
+[_location, QFUNC(initObject), [], [_ops_location]] call JAGER_state_fnc_load;
 
 // Ask server to save empty value instead.
-[_location, []] call JAGER_main_fnc_saveState;
+[_location, []] call JAGER_state_fnc_save;

@@ -9,7 +9,7 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"ACE_vehicles", "JAGER_main"};
+    requiredAddons[] = {"ACE_vehicles", "JAGER_main", "JAGER_state"};
     units[] = {};
     weapons[] = {};
   };

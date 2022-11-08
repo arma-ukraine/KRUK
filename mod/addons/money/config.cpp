@@ -9,10 +9,8 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"JAGER_main", "A3_Modules_F", "A3_Characters_F", "A3_Weapons_F", "CBA_main", "ACE_medical"};
-    units[] = {
-        QGVAR(moduleLoadCharacter),
-        QGVAR(moduleSaveCharacter)};
+    requiredAddons[] = {"A3_Modules_F", "A3_Characters_F", "A3_Weapons_F", "CBA_main"};
+    units[] = {};
     weapons[] = {};
   };
 };

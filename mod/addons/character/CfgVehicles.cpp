@@ -11,19 +11,19 @@ class CfgVehicles
         scopeCurator = 2;
     };
 
-    class GVAR(moduleLoadCharacter) : GVAR(moduleBase)
+    class GVAR(moduleLoad) : GVAR(moduleBase)
     {
         curatorCanAttach = 1;
-        category = QGVAR(Persistence);
+        category = QGVAR(Characters);
         displayName = QGVAR(Load);
-        function = QFUNC(moduleLoadCharacter);
+        function = QFUNC(moduleLoad);
     };
 
-    class GVAR(moduleSaveCharacter) : GVAR(moduleBase)
+    class GVAR(moduleSave) : GVAR(moduleBase)
     {
         curatorCanAttach = 1;
-        category = QGVAR(Persistence);
+        category = QGVAR(Characters);
         displayName = QGVAR(Save);
-        function = QFUNC(moduleSaveCharacter);
+        function = QFUNC(moduleSave);
     };
 };
