@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={459.83099,31.729015,17004.934};
-		dir[]={-0.56464106,-0.34950781,0.74771976};
-		up[]={-0.2106356,0.93692315,0.27893236};
-		aside[]={0.79804415,1.7613638e-007,0.60264713};
+		pos[]={114.29711,28.292419,17728.035};
+		dir[]={-0.033491775,-0.63134986,0.77478439};
+		up[]={-0.027266124,0.77549428,0.63075989};
+		aside[]={0.99907565,-5.2281393e-008,0.043187182};
 	};
 };
 binarizationWanted=0;
@@ -23763,7 +23763,7 @@ class Mission
 			position[]={505.06387,22.131348,17029.822};
 			name="respawn_INDEPENDENT";
 			type="Empty";
-			angle=0.75767213;
+			angle=0.75767207;
 			id=2836;
 			atlOffset=-5.2709217;
 		};
@@ -41632,7 +41632,7 @@ class Mission
 			};
 			id=8867;
 			type="EmptyDetectorAreaR50";
-			atlOffset=0.10032654;
+			atlOffset=0.10037994;
 		};
 		class Item266
 		{
@@ -45809,8 +45809,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={114.71217,26.723713,17726.084};
-				angles[]={0,1.5676373,0};
+				position[]={113.65187,26.723295,17729.949};
+				angles[]={-0,1.5676373,0};
 			};
 			side="Empty";
 			flags=4;
@@ -45820,24 +45820,23 @@ class Mission
 			};
 			id=9105;
 			type="Land_WoodenTable_small_F";
-			atlOffset=0.00041770935;
 		};
 		class Item331
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={114.761,27.232498,17726.119};
-				angles[]={0,3.1658528,0};
+				position[]={113.64382,27.232401,17729.902};
+				angles[]={-0,3.1658528,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
-				init="[this, vasyl_shop_box, [ " \n " [""ACE_fieldDressing"", [""Item"", 38, 3, 5]], " \n " [""ACE_Humanitarian_Ration"", [""Item"", 23, 10, 1]]," \n " [""ACE_WaterBottle"", [""Item"", 78, 10, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
+				init="[this, vasyl_shop_box, [ " \n " [""JAGER_money_Uah_1"", [""Item"", 1, 10, 1]], " \n " [""JAGER_money_Uah_2"", [""Item"", 2, 10, 1]], " \n " [""JAGER_money_Uah_5"", [""Item"", 5, 10, 1]], " \n " [""JAGER_money_Uah_10"", [""Item"", 10, 10, 1]], " \n " [""JAGER_money_Uah_20"", [""Item"", 20, 10, 1]], " \n " [""JAGER_money_Uah_50"", [""Item"", 50, 10, 1]], " \n " [""JAGER_money_Uah_100"", [""Item"", 100, 10, 1]], " \n " [""JAGER_money_Uah_200"", [""Item"", 200, 10, 1]], " \n " [""JAGER_money_Uah_500"", [""Item"", 500, 10, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
 			};
 			id=9106;
 			type="rhs_3Ya40_1_single";
-			atlOffset=0.86468697;
 		};
 		class Item332
 		{
