@@ -10,7 +10,7 @@ cmd = " ".join(
     ]
     + settings.CLIENT_STARTUP_PARAMETERS
     + [
-        f"{settings.PROJECT_PATH}\mission\mission.sqm",
+        f'"{settings.PROJECT_PATH}\mission\mission.sqm"',
     ]
 )
 

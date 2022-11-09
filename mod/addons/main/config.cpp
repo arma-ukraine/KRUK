@@ -9,8 +9,12 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"CBA_main"};
-    units[] = {};
+    requiredAddons[] = {
+        "A3_Characters_F",
+        "A3_Modules_F",
+        "A3_Weapons_F",
+        "CBA_main"};
+    units[] = {QGVAR(moduleAoeHint)};
     weapons[] = {};
   };
 };
@@ -18,3 +22,5 @@ class CfgPatches
 PRELOAD_ADDONS;
 
 #include "CfgEventhandlers.cpp"
+#include "CfgFactionClasses.cpp"
+#include "CfgVehicles.cpp"
