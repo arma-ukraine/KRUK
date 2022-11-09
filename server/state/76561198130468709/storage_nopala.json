@@ -4,29 +4,78 @@
     [
       [
         [
+          "kat_scalpel",
+          "JAGER_money_Uah_50",
+          "ACE_WaterBottle_Half",
+          "ACE_MRE_ChickenTikkaMasala",
+          "ACE_MRE_BeefStew",
           "ItemMap",
           "ItemCompass",
+          "ACE_bodyBag",
+          "ACE_fieldDressing",
           "ItemWatch",
-          "ACE_WaterBottle",
-          "ACE_MRE_SteakVegetables",
-          "JAGER_money_Uah_500"
+          "kat_chestSeal",
+          "ACE_splint",
+          "kat_PainkillerItem",
+          "greenmag_ammo_9x21_basic_1Rnd",
+          "U_I_L_Uniform_01_tshirt_skull_F",
+          "H_Cap_brn_SPECOPS"
         ],
         [
-          10,
-          10,
-          10,
-          10,
+          1,
+          2,
+          13,
+          2,
           15,
-          2
+          10,
+          10,
+          5,
+          9,
+          11,
+          1,
+          2,
+          4,
+          30,
+          2,
+          1
         ]
       ],
-      [],
       [
         [
-          "rhs_mag_f1"
+          "Pipe_aluminium",
+          "",
+          "",
+          "",
+          [],
+          [],
+          ""
         ],
         [
-          1
+          "rhs_weap_scorpion",
+          "",
+          "",
+          "",
+          [],
+          [],
+          ""
+        ]
+      ],
+      [
+        [
+          "rhsgref_10rnd_765x17_vz61",
+          10
+        ],
+        [
+          "rhsgref_10rnd_765x17_vz61",
+          2
+        ],
+        [
+          "10Rnd_9x21_Mag",
+          0
+        ],
+        [
+          "10Rnd_9x21_Mag",
+          0
         ]
       ],
       []
