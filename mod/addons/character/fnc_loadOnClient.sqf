@@ -1,5 +1,10 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Callback to load player data on client.
+	
+	_character_data call FUNC(...);
+*/
 
 // Client only.
 if (!hasInterface) exitWith {};
@@ -9,16 +14,17 @@ waitUntil {
 
 params ["_character"];
 
+// Immediately save character data as a global variable.
 GVAR(character) = createHashMapFromArray call {
 	_character;
 };
 
-// Whitelist.
+// Check if user is whitelisted.
 if (!(GVAR(character) get "whitelisted")) exitWith {
 	endMission "Whitelist";
 };
 
-// Ache.
+// Initialize aches if any.
 {
 	_x spawn {
 		while { true } do {
@@ -54,4 +60,5 @@ player setDir (GVAR(character) get "dir");
 // set unit inventory.
 player setUnitLoadout (GVAR(character) get "loadout");
 
+// Character is loaded, initialize autosave.
 call FUNC(initAutosave);

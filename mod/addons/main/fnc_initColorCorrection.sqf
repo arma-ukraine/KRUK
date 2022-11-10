@@ -3,6 +3,9 @@ TRACE_1("trace", nil);
 
 // Client only.
 if (!hasInterface) exitWith {};
+waitUntil {
+	!isNull player
+};
 
 GVAR(ColorCorrection) = ppEffectCreate ["colorCorrections", 1501];
 GVAR(ColorCorrection) ppEffectAdjust

@@ -1,5 +1,10 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Zeus module: save character.
+	
+	call FUNC(...);
+*/
 
 params ["_logic"];
 

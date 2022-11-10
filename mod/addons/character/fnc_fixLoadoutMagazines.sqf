@@ -1,13 +1,14 @@
-/**
-	 * util_cleanLoadout
-	 * _loadout = (player getUnitLoadout) call util_cleanLoadout;
-	 *
-	 * Keeps the ammo from refilling if there are duplicate used ammo counts in one inventory container. Fix for what demellion posted
- */
-
-private ["_loadout", "_uniform", "_type", "_vest", "_backpack"];
+#include "script_component.hpp"
+TRACE_1("trace", nil);
+/*
+	Fixes loadout to not top up magazines in player inventory.
+	
+	_fixed_loadout = _original_loadout call FUNC(...);
+*/
 
 _loadout = _this;
+
+private ["_loadout", "_uniform", "_type", "_vest", "_backpack"];
 
 // uniform
 if (count (_loadout select 3) > 0) then {

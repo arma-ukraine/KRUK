@@ -1,8 +1,16 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Restore unit properties and remove gear on respawn.
+	
+	call FUNC(...);
+*/
 
 // Client only.
 if (!hasInterface) exitWith {};
+waitUntil {
+	!isNull player
+};
 
 player addEventHandler ["Respawn", {
 	params ["_unit", "_corpse"];

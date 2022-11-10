@@ -3,6 +3,9 @@ TRACE_1("trace", nil);
 
 // Client only.
 if (!hasInterface) exitWith {};
+waitUntil {
+	!isNull player
+};
 
 private ["_kp_neutral_consumption", "_kp_normal_consumption", "_kp_max_consumption"];
 

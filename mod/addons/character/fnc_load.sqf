@@ -1,5 +1,10 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	load player data.
+	
+	_player_uid call FUNC(...);
+*/
 
 params ["_uid"];
 
