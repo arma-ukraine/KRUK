@@ -1,13 +1,23 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
-
-// Category, Price, Batches in Stock, Amount in Batch.
-
-// [this, storage_box, [
-	// ["hgun_Pistol_01_F", ["Weapon", 400, 1, 1]], 
-	// ["10Rnd_9x21_Mag", ["Magazine", 100, 1, 2]], 
-	// ["greenmag_ammo_9x21_basic_30Rnd", ["Item", 150, 1, 1]]
-// ]] call JAGER_money_fnc_setupShop;
+/*
+	Initialize shop with items to buy.
+	
+	Put this into the init field of the editor object that will be replaced with shop:
+	
+	[this, _target_inventory_object, [
+		["_item_class", ["_item_type", _price, _amount_in_batch, _batches]], 
+		["_item_class", ["_item_type", _price, _amount_in_batch, _batches]]
+	]] call JAGER_money_fnc_setupShop;
+	
+	this - item shop is being initialized for.
+	_target_inventory_object - editor object with inventory bought items will be placed into.
+	_item_type - className of the item.
+	_price - price. :)
+	_amount_in_batch - how many items are bought every time.
+	_batches - amount of batches available to buy before it runs out of stock.
+	
+*/
 
 params [
 	"_object",
@@ -18,21 +28,28 @@ params [
 // Server only.
 if (!isServer) exitWith {};
 
+// get reference object location and direction.
 private _pos = getPosATL _object;
 private _dir = getDir _object;
+
+// Delete reference object.
 deleteVehicle _object;
 
+// Create ground inventory to hold items we'll buy.
 _object = createVehicle ["GroundWeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir _dir;
 _object allowDamage false;
 
+// Save object variables for later access.
 _object setVariable [QGVAR(target_inventory), _target_inventory, true];
 _object setVariable [QGVAR(shop), createHashMapFromArray _items, true];
 
+// Protect the shop.
 [_object, false] remoteExec ["allowDamage", 0, true];
 [_object, false] remoteExec ["enableSimulation", 0, true];
 [_object] remoteExec ["removeAllActions", 0, true];
 
+// Add actions to clients.
 {
 	private _category = _x#1#0;
 	private _classname = _x#0;

@@ -1,12 +1,21 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Buy item action.
+	
+	["_target", "_caller", "_actionId", "_classname"] call FUNC(...);
+	
+	input is a set of standard a3 action arguments.
+*/
 
 params ["_target", "_caller", "_actionId", "_classname"];
 
+// get variables from the shop initialized.
 private _target_inventory = _target getVariable QGVAR(target_inventory);
 private _shop = _target getVariable QGVAR(shop);
 private _item = _shop get _classname;
 
+// Parse item that player attempts to buy.
 _item params ["_category", "_price", "_stock_batches", "_amount_in_batch"];
 private _display_name = "";
 

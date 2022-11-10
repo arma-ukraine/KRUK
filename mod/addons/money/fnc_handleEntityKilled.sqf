@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Standard Killed handler. Just add some money to Mrazota faction.
+*/
 
 params ["_unit", "_killer", "_instigator", "_useEffects"];
 
