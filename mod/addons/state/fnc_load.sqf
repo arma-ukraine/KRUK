@@ -1,13 +1,23 @@
-/*
-	Loads state from the location.
-*/
-
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	load state and send it as arguments to callback function.
+	
+	[_location, _callback, _default, _args] call FUNC(...);
+	
+	_location - essentially, file path data will be loaded from
+	_callback - name of the function that will be called with the data loaded
+	_default - default value that will be provided if state isn't there yet
+	_args - additional arguments if any that will be sent to callback function
+	
+	Callback will be called like so:
+	[_data, _args] call _callback;
+*/
 
 params ["_location", "_callback", "_default", "_args"];
 TRACE_4("received data load request", _location, _callback, _default, _args);
 
+// Args may not exist.
 _args = RETDEF(_args, []);
 
 // Server only, redirect the call if necessary.

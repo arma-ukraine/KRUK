@@ -1,8 +1,13 @@
-/*
-	Saves state to a location.
-*/
-
 #include "script_component.hpp"
+TRACE_1("trace", nil);
+/*
+	save state.
+	
+	[_location, _state] call FUNC(...);
+	
+	_location - essentially, file path data will be loaded from
+	_state - datat o save
+*/
 
 params ["_location", "_state"];
 
