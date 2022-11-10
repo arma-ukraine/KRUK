@@ -5,6 +5,6 @@ PREP(save);
 PREP(moduleSave);
 PREP(moduleLoad);
 
-PREP(initRestoreTraitsOnRespawn);
+PREP(initRespawnHandling);
 PREP(initVehicleLimitaions);
 PREP(initSaveOnDisconnect);

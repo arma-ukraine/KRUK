@@ -12,5 +12,5 @@ if (hasInterface) then {
 
 	(getPlayerUID player) call FUNC(load);
 	call FUNC(initVehicleLimitaions);
-	call FUNC(initRestoreTraitsOnRespawn);
+	call FUNC(initRespawnHandling);
 };
