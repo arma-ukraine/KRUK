@@ -1,6 +1,12 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
 
+// Client only.
+if (!hasInterface) exitWith {};
+waitUntil {
+	!isNull player
+};
+
 params ["_character"];
 
 GVAR(character) = createHashMapFromArray call {
@@ -47,3 +53,5 @@ player setDir (GVAR(character) get "dir");
 
 // set unit inventory.
 player setUnitLoadout (GVAR(character) get "loadout");
+
+call FUNC(initAutosave);
