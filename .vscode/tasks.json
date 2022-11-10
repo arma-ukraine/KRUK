@@ -13,6 +13,14 @@
       }
     },
     {
+      "label": "publish",
+      "type": "shell",
+      "command": "python3 publish.py",
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
       "label": "run-editor",
       "type": "shell",
       "command": "start python3 run_editor.py",
