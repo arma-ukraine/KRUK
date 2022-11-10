@@ -5,7 +5,7 @@ import os
 
 import settings
 
-os.chdir(pathlib.Path("P:\\x\\JAGER"))
+os.chdir(pathlib.Path("P:/x/JAGER"))
 
 dist_path = pathlib.Path(f"{settings.PROJECT_PATH}/.dist")
 shutil.rmtree(dist_path)
