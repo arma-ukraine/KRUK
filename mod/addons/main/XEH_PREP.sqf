@@ -1,8 +1,4 @@
-// fuel consumption.
-PREP(initFuelConsumption);
-
-// Color Correction.
 PREP(initColorCorrection);
-
-// Modules
+PREP(initEntityKilledHandling);
+PREP(initFuelConsumption);
 PREP(moduleAoeHint);

@@ -12,4 +12,5 @@ if (hasInterface) then {
 
 	call FUNC(initFuelConsumption);
 	call FUNC(initColorCorrection);
+	call FUNC(initEntityKilledHandling);
 };

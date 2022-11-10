@@ -2,9 +2,7 @@
 TRACE_1("trace", nil);
 
 // Client only.
-if (!hasInterface) exitWith {
-	WARNING("initRespawn should only be called on the client.");
-};
+if (!hasInterface) exitWith {};
 
 player addEventHandler ["Respawn", {
 	params ["_unit", "_corpse"];

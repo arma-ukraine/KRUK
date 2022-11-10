@@ -1,5 +1,6 @@
 class CfgPatches
 {
+
   class O_MovariMrazota
   {
     units[] = {
