@@ -8,7 +8,7 @@ private _local_uid = getPlayerUID player;
 if (_uid == _local_uid) exitWith {
 	private _location = format ["%1/character", _uid];
 
-	private _loadout = getUnitLoadout player;
+	private _loadout = (getUnitLoadout player) call FUNC(fixLoadoutMagazines);
 	if (GVARMAIN(tfarLoaded)) then {
 		private _assignedRadio = (_loadout select 9) select 2;
 		if (_assignedRadio call TFAR_fnc_isRadio) then {
