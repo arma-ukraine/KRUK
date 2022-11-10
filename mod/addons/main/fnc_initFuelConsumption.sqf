@@ -1,5 +1,10 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Initialize increased fuel consumption for players.
+	
+	call FUNC(...);
+*/
 
 // Client only.
 if (!hasInterface) exitWith {};

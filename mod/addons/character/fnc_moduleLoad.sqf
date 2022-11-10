@@ -2,8 +2,6 @@
 TRACE_1("trace", nil);
 /*
 	Zeus module: load character.
-	
-	call FUNC(...);
 */
 
 params ["_logic"];

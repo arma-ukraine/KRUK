@@ -1,5 +1,10 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
+/*
+	Remove some equipment from dead enemies and players.
+	
+	call FUNC(...);
+*/
 
 // Server only.
 if (!isServer) exitWith {};
