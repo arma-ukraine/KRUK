@@ -8,7 +8,6 @@ if (!hasInterface) exitWith {};
 	params ["_uid"];
 	while { true } do {
 		[_uid] call FUNC(save);
-		systemChat "saved";
 		sleep 600; // Wait for 10 minutes.
 	};
 };
