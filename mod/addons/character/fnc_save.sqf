@@ -3,33 +3,41 @@ TRACE_1("trace", nil);
 /*
 	Save character.
 	
-	_player_uid call FUNC(...);
+	[_player_uid, _unit] call FUNC(...);
+	
+	_player_uid - obvious.
+	_unit - sometimes it's not possible to get unit by player uid any more, 
+	e.g. when player disconnects. When that happens we pass unit over directly.
 */
 
-params ["_uid"];
+params ["_uid", "_unit"];
 
-// get local machine uid.
-private _local_uid = getPlayerUID player;
-
-// if local machine uid is not the one we want save character for, 
-// we redirect the command to another machine with the correct uid.
-if (_uid != _local_uid) exitWith {
-	[_uid] remoteExec [QFUNC(save), _uid call BIS_fnc_getUnitByUID];
+// Server only. Redirect to server if function executed elsewhere.
+if (!isServer) exitWith {
+	_uid remoteExec [QFUNC(save), 2];
 };
 
-// local machine uid is the one we want save character for.
+// Get unit we'll be saving if not provided.
+if (isNil "_unit") then {
+	_unit = _uid call BIS_fnc_getUnitByUID;
+};
 
 // Generate location we'll save data at.
 private _location = format ["%1/character", _uid];
 
+// get state that was attached to unit.
+private _state = _unit getVariable QGVAR(state);
+
 // get unit loadout.
-private _loadout = (getUnitLoadout player) call FUNC(fixLoadoutMagazines);
+private _loadout = (getUnitLoadout _unit) call FUNC(fixLoadoutMagazines);
 
 // Deinstance tfar radios in loadout, make them of generic class.
 if (GVARMAIN(tfarLoaded)) then {
-	private _assignedRadio = (_loadout select 9) select 2;
-	if (_assignedRadio call TFAR_fnc_isRadio) then {
-		(_loadout select 9) set [2, [configFile >> "CfgWeapons" >> _assignedRadio >> "tf_parent", "text", _assignedRadio] call CBA_fnc_getConfigEntry];
+	if (count (_loadout select 9) > 0) then {
+		private _assignedRadio = (_loadout select 9) select 2;
+		if (_assignedRadio call TFAR_fnc_isRadio) then {
+			(_loadout select 9) set [2, [configFile >> "CfgWeapons" >> _assignedRadio >> "tf_parent", "text", _assignedRadio] call CBA_fnc_getConfigEntry];
+		};
 	};
 
 	private _fnc_replaceRadioTfar = {
@@ -58,22 +66,16 @@ if (GVARMAIN(tfarLoaded)) then {
 };
 
 // set other variables from actual character state.
-GVAR(character) set ["pos", getPosATL player];
-GVAR(character) set ["dir", getDir player];
-GVAR(character) set ["loadout", _loadout];
+_state set ["pos", getPosATL _unit];
+_state set ["dir", getDir _unit];
+_state set ["loadout", _loadout];
 
-GVAR(character) set ["engineer", player getVariable "ace_isengineer"];
-GVAR(character) set ["medic", player getVariable "ace_medical_medicclass"];
-GVAR(character) set ["explosive_specialist", player getUnitTrait "explosiveSpecialist"];
+_state set ["engineer", _unit getVariable "ace_isengineer"];
+_state set ["medic", _unit getVariable "ace_medical_medicclass"];
+_state set ["explosive_specialist", _unit getUnitTrait "explosiveSpecialist"];
 
-GVAR(character) set ["aim_coef", getCustomAimCoef player];
-GVAR(character) set ["recoil_coef", unitRecoilCoefficient player];
-
-GVAR(character) set ["camouflage_coef", player getUnitTrait "camouflageCoef"];
-GVAR(character) set ["audible_coef", player getUnitTrait "audibleCoef"];
-
-// Convert character data to array.
-private _data = GVAR(character) toArray	false;
+// Convert our state to array for it to be saved.
+private _data = _state toArray false;
 
 // Save character data.
-[_location, _data] call JAGER_state_fnc_save;
+[_location, _data] remoteExec ["JAGER_state_fnc_save", 2]

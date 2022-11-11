@@ -42,12 +42,12 @@ if (isNil "_state") then {
 
 // if call was initiated by remote entity, run callback there.
 if (isRemoteExecuted) exitWith {
-	TRACE_1("return callback to the remote entity", _default);
+	TRACE_2("return callback to the remote entity", _state, _args);
 	[_state, _args] remoteExec [_callback, remoteExecutedOwner];
 };
 
 // if call was initiated by the server itself, run callback on server.
 if (!isRemoteExecuted) exitWith {
-	TRACE_1("run callback locally", _default);
+	TRACE_2("run callback locally", _state, _args);
 	[_state, _args] call (call compile _callback);
 };

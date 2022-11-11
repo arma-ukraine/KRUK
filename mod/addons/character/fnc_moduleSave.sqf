@@ -25,4 +25,4 @@ if (!isPlayer _unit) exitWith {
 	systemChat "Цей модуль працює тільки на гравців.";
 };
 
-[getPlayerUID _unit] call FUNC(save);
+[getPlayerUID _unit, _unit] call FUNC(save);

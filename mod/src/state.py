@@ -24,6 +24,7 @@ def load(location: str) -> t.List:
             _get_path(location),
             encoding="utf-8",
         ) as fh:
-            return json.load(fh)["data"]
+            result = json.load(fh)["data"]
+            return result if result else None
     except (json.JSONDecodeError, FileNotFoundError, KeyError):
         return None

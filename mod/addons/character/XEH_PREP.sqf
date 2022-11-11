@@ -1,6 +1,5 @@
 PREP(default);
 PREP(fixLoadoutMagazines);
-PREP(initAutosave);
 PREP(initRespawnHandling);
 PREP(initSaveOnDisconnect);
 PREP(initVehicleLimitaions);

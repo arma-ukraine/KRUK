@@ -11,6 +11,6 @@ if (!isServer) exitWith {};
 
 addMissionEventHandler ["HandleDisconnect", {
 	params ["_unit", "_id", "_uid", "_name"];
-	[_uid] call FUNC(save);
+	[_uid, _unit] call FUNC(save);
 	false;
 }];

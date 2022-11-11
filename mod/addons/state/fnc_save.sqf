@@ -6,7 +6,7 @@ TRACE_1("trace", nil);
 	[_location, _state] call FUNC(...);
 	
 	_location - essentially, file path data will be loaded from
-	_state - datat o save
+	_state - data to save
 */
 
 params ["_location", "_state"];
@@ -15,6 +15,8 @@ params ["_location", "_state"];
 if (!isServer) exitWith {
 	[_location, _state] remoteExec [QFUNC(save), 2];
 };
+
+TRACE_2("saving state", _location, _state);
 
 // Save data.
 ["src.state.save", [_location, _state]] call py3_fnc_callExtension;

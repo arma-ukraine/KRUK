@@ -12,15 +12,17 @@ waitUntil {
 	!isNull player
 };
 
-params ["_character"];
+// get state and convert it to hashmap.
+params ["_state", "_args"];
+TRACE_1("character state:", _state);
+_state = createHashMapFromArray _state;
+TRACE_1("character state:", _state);
 
-// Immediately save character data as a global variable.
-GVAR(character) = createHashMapFromArray call {
-	_character;
-};
+// Immediately save character data as a unit variable and broadcast it.
+player setVariable [QGVAR(state), _state, true];
 
-// Check if user is whitelisted.
-if (!(GVAR(character) get "whitelisted")) exitWith {
+// Check if we are whitelisted.
+if (!(_state get "whitelisted")) exitWith {
 	endMission "Whitelist";
 };
 
@@ -32,33 +34,30 @@ if (!(GVAR(character) get "whitelisted")) exitWith {
 			sleep (random 3600 + 1800); // Wait for 30-90 minutes.
 		};
 	};
-} forEach (GVAR(character) get "ache");
+} forEach (_state get "ache");
 
 // Engineer.
-player setUnitTrait ["engineer", GVAR(character) get "engineer" > 0];
-player setVariable ["ace_isengineer", GVAR(character) get "engineer", true];
+player setUnitTrait ["engineer", _state get "engineer" > 0];
+player setVariable ["ace_isengineer", _state get "engineer", true];
 
 // Medic.
-player setUnitTrait ["medic", GVAR(character) get "medic" > 0];
-player setVariable ["ace_medical_medicclass", GVAR(character) get "medic", true];
+player setUnitTrait ["medic", _state get "medic" > 0];
+player setVariable ["ace_medical_medicclass", _state get "medic", true];
 
 // Explosive Specialist.
-player setUnitTrait ["explosiveSpecialist", GVAR(character) get "explosive_specialist"];
+player setUnitTrait ["explosiveSpecialist", _state get "explosive_specialist"];
 
 // Firearms skill.
-player setCustomAimCoef (GVAR(character) get "aim_coef");
-player setUnitRecoilCoefficient (GVAR(character) get "recoil_coef");
+player setCustomAimCoef (_state get "aim_coef");
+player setUnitRecoilCoefficient (_state get "recoil_coef");
 
 // Ninja skills.
-player setUnitTrait ["camouflageCoef", GVAR(character) get "camouflage_coef"];
-player setUnitTrait ["audibleCoef", GVAR(character) get "audible_coef"];
+player setUnitTrait ["camouflageCoef", _state get "camouflage_coef"];
+player setUnitTrait ["audibleCoef", _state get "audible_coef"];
 
 // set unit position and direction.
-player setPosATL (GVAR(character) get "pos");
-player setDir (GVAR(character) get "dir");
+player setPosATL (_state get "pos");
+player setDir (_state get "dir");
 
 // set unit inventory.
-player setUnitLoadout (GVAR(character) get "loadout");
-
-// Character is loaded, initialize autosave.
-call FUNC(initAutosave);
+player setUnitLoadout (_state get "loadout");
