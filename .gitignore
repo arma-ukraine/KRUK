@@ -16,3 +16,5 @@ server/server_profile/AnimDataCache
 server/server_profile/OfficialServersCache
 server/server_profile/DataCache
 server/server_profile/Users/DiRaven/Saved
+server/server_profile/Tmp*
+server/server_profile/Users/DiRaven/DiRaven.Arma3Profile
