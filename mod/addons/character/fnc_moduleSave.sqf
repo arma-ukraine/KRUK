@@ -13,7 +13,7 @@ if (isNull _unit) exitWith {
 	systemChat "Оберіть юніта.";
 };
 
-if !(_unit isKindOf "CAManBase") exitWith {
+if (!(_unit isKindOf "CAManBase")) exitWith {
 	systemChat "Цей модуль працює лише з піхотою.";
 };
 
