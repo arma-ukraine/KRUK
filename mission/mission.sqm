@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1665;
+	toggles=1537;
 	mods[]=
 	{
 		"WBK_Zombies_AdvancedEditorSettings",
@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9793;
+		nextID=9819;
 	};
 	class MarkerIDProvider
 	{
@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={489.12747,31.122211,17019.922};
-		dir[]={0.76527679,-0.45084652,0.45944411};
-		up[]={0.38653573,0.89260149,0.23206188};
-		aside[]={0.51472479,0,-0.85735554};
+		pos[]={1849.7073,146.97791,14677.568};
+		dir[]={0.24391437,-0.56923574,0.78522354};
+		up[]={0.16886987,0.82214892,0.54363412};
+		aside[]={0.95502794,-7.9453457e-008,-0.29666078};
 	};
 };
 binarizationWanted=0;
@@ -24071,7 +24071,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=462;
+		items=468;
 		class Item0
 		{
 			dataType="Logic";
@@ -41161,8 +41161,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={111.576,27.233242,17726.117};
-				angles[]={0,3.1658528,0};
+				position[]={111.50844,27.232819,17726.305};
+				angles[]={-0,3.1658528,0};
 			};
 			side="Empty";
 			flags=4;
@@ -41172,21 +41172,20 @@ class Mission
 			};
 			id=8714;
 			type="rhs_3Ya40_1_single";
-			atlOffset=0.0004234314;
 		};
 		class Item267
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={113.09653,27.232401,17726.102};
-				angles[]={0,3.1658528,0};
+				position[]={113.11897,27.232401,17726.371};
+				angles[]={-0,3.1658528,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="[this, vasyl_shop_box, [ " \n " [""ACE_fieldDressing"", [""Item"", 38, 3, 5]], " \n " [""ACE_Humanitarian_Ration"", [""Item"", 23, 10, 1]]," \n " [""ACE_WaterBottle"", [""Item"", 78, 10, 1]]" \n "]] call JAGER_money_fnc_initShop;" \n "";
+				init="[this, vasyl_shop_box, [ " \n " [""ACE_elasticBandage"", [""Item"", 36, 2, 2]], " \n " [""ACE_packingBandage"", [""Item"", 36, 2, 2]], " \n " [""ACE_quikclot"", [""Item"", 36, 2, 2]], " \n " [""ACE_Humanitarian_Ration"", [""Item"", 23, 1, 10]], " \n " [""ACE_WaterBottle"", [""Item"", 78, 1, 1]] " \n "]] call JAGER_money_fnc_initShop;";
 			};
 			id=8776;
 			type="rhs_3Ya40_1_single";
@@ -49162,7 +49161,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1569.9558,30.982437,14379.797};
+				position[]={1569.9561,30.982187,14379.797};
 				angles[]={0,1.8230662,0};
 			};
 			side="Empty";
@@ -49174,7 +49173,7 @@ class Mission
 			};
 			id=9356;
 			type="C_Van_02_medevac_F";
-			atlOffset=0.26124763;
+			atlOffset=0.26099968;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49186,7 +49185,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit"",""Medikit""],[24,4]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_CableTie"",""ACE_WaterBottle"",""ACE_WaterBottle_Empty"",""ACE_Can_Franta"",""ACE_Humanitarian_Ration"",""ACE_EarPlugs"",""ACE_fieldDressing"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_splint"",""ACE_morphine"",""ACE_adenosine"",""ACE_epinephrine"",""ACE_plasmaIV_500"",""ACE_plasmaIV_250"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_quikclot"",""ACE_personalAidKit"",""ACE_surgicalKit"",""ACE_bodyBag"",""kat_guedel"",""kat_accuvac"",""kat_bloodIV_O"",""kat_bloodIV_O_N"",""kat_bloodIV_A"",""kat_bloodIV_A_N"",""kat_bloodIV_B"",""kat_bloodIV_B_N"",""kat_bloodIV_AB"",""kat_bloodIV_AB_N"",""kat_bloodIV_O_500"",""kat_bloodIV_O_N_500"",""kat_bloodIV_A_500"",""kat_bloodIV_A_N_500"",""kat_bloodIV_B_500"",""kat_bloodIV_B_N_500"",""kat_bloodIV_AB_500"",""kat_bloodIV_AB_N_500"",""kat_bloodIV_O_250"",""kat_bloodIV_O_N_250"",""kat_bloodIV_A_250"",""kat_bloodIV_A_N_250"",""kat_bloodIV_B_250"",""kat_bloodIV_B_N_250"",""kat_bloodIV_AB_250"",""kat_bloodIV_AB_N_250"",""KAT_Empty_bloodIV_500"",""KAT_Empty_bloodIV_250"",""kat_X_AED"",""kat_PainkillerItem"",""kat_CarbonateItem"",""kat_IV_16"",""kat_IO_FAST"",""kat_naloxone"",""kat_EACA"",""kat_norepinephrine"",""kat_phenylephrine"",""kat_nitroglycerin"",""kat_amiodarone"",""kat_lidocaine"",""kat_atropine"",""kat_ketamine"",""kat_fentanyl"",""kat_nalbuphine"",""kat_lorazepam"",""kat_etomidate"",""kat_clamp"",""kat_plate"",""kat_vacuum"",""kat_Pulseoximeter"",""kat_chestSeal"",""kat_aatKit"",""kat_stethoscope""],[2,1,1,2,1,2,6,6,2,5,5,6,3,2,2,2,2,12,1,2,2,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,2,3,10,10,5,2,3,2,2,2,13,3,6,3,2,3,3,5,1,5,2,3,5,3,1]],[[],[]]],false]";
 						};
 					};
 				};
@@ -49199,7 +49198,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[""hitlfwheel"",""hitlf2wheel"",""hitrfwheel"",""hitrf2wheel"",""hithull"",""hitfuel"",""hitengine"",""hitglass1"",""hitglass2"",""hitglass3"",""hitglass4"",""hitglass5"",""hitglass6"",""hitglass7"",""hitglass8"",""hitrglass"",""hitlglass"",""hitbody"",""hitlbwheel"",""hitlmwheel"",""hitrbwheel"",""hitrmwheel"",""#light_l"",""#light_r"",""#light_l"",""#light_r"",""#light_l"",""#light_r""],[1,1,1,1,0.812881,1,1,1,1,1,1,0.851636,1,0.793504,0.58866,0.918071,0.635719,0.898694,0.688314,0.721532,0.55821,0.522224,0.906999,0.75475,0.821186,0.691082,0.502847,0.458556]]";
+							value="[[""hitlfwheel"",""hitlf2wheel"",""hitrfwheel"",""hitrf2wheel"",""hithull"",""hitfuel"",""hitengine"",""hitglass1"",""hitglass2"",""hitglass3"",""hitglass4"",""hitglass5"",""hitglass6"",""hitglass7"",""hitglass8"",""hitrglass"",""hitlglass"",""hitbody"",""hitlbwheel"",""hitlmwheel"",""hitrbwheel"",""hitrmwheel"",""#light_l"",""#light_r"",""#light_l"",""#light_r"",""#light_l"",""#light_r""],[1,1,1,1,0.81,1,1,1,1,1,1,0.85,1,0.79,0.59,0.92,0.64,0.9,0.69,0.72,0.56,0.52,0.91,0.75,0.82,0.69,0.5,0.46]]";
 						};
 					};
 				};
@@ -52248,7 +52247,7 @@ class Mission
 			angle=0.06633997;
 			class Attributes
 			{
-				onActivation="{ " \n " if (!((getPlayerUID _x) in [""_SP_PLAYER_1"", ""76561197999599845"", ""76561198130468709""])) then { " \n "  _x setPosASL (getMarkerPos ""respawn_INDEPENDENT""); " \n "  systemChat ""Доступ сюди має виключно лідер СВН.""; " \n " }; " \n "} forEach thisList;";
+				onActivation="{ " \n " if (!((getPlayerUID _x) in [""_SP_PLAYER_"", ""76561197999599845"", ""76561198130468709""])) then { " \n "  _x setPosASL (getMarkerPos ""respawn_INDEPENDENT""); " \n "  systemChat ""Доступ сюди має виключно лідер СВН.""; " \n " }; " \n "} forEach thisList;";
 				sizeA=2.589;
 				sizeB=2.6459999;
 				repeatable=1;
@@ -52327,6 +52326,379 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item462
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={471.3649,30.684639,17007.145};
+				angles[]={0,2.737828,0.0012042772};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=9793;
+			type="rhs_3Ya40_1_single";
+			atlOffset=0.86458969;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[""JAGER_money_Uah_50""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item463
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={114.62845,26.723295,17726.135};
+				angles[]={0,1.5676373,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+			};
+			id=9795;
+			type="Land_WoodenTable_small_F";
+		};
+		class Item464
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={114.55279,27.232401,17726.334};
+				angles[]={-0,3.1658528,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this, vasyl_shop_box, [ " \n " [""Bat_Clear"", [""Weapon"", 138, 1, 1]], " \n " [""Bat_Spike"", [""Weapon"", 242, 1, 1]], " \n " [""Crowbar"", [""Weapon"", 233, 1, 1]], " \n " [""Knife_m3"", [""Weapon"", 245, 1, 1]], " \n " [""WBK_survival_weapon_4"", [""Weapon"", 212, 1, 1]] " \n "]] call JAGER_money_fnc_initShop;";
+			};
+			id=9796;
+			type="rhs_3Ya40_1_single";
+		};
+		class Item465
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=7;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1608.248,24.959738,14351.986};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9800;
+					type="O_OMovariMrazota_Shooter_Handgun_01";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1608.9677,24.891129,14350.908};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9807;
+					type="O_OMovariMrazota_Rusher_01";
+					atlOffset=9.5367432e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1610.3704,24.734196,14351.746};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9808;
+					type="O_OMovariMrazota_Rusher_01";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1608.936,24.835329,14353.063};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9809;
+					type="O_OMovariMrazota_Rusher_Fists_01";
+					atlOffset=1.335144e-005;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1606.515,25.172392,14350.23};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9810;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1610.481,24.736372,14353.802};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9811;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1612.0802,24.631344,14352.46};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9812;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=3.8146973e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9799;
+		};
+		class Item466
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1571.2728,29.061163,14386.7};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9802;
+					type="O_OMovariMrazota_Shooter_Handgun_01";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1572.4098,29.055986,14385.089};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9803;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1573.5243,29.03009,14387.517};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9804;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1572.9686,29.047966,14386.13};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9805;
+					type="O_OMovariMrazota_Rusher_01";
+					atlOffset=1.9073486e-006;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1575.1207,28.975325,14388.62};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9806;
+					type="O_OMovariMrazota_Rusher_01";
+					atlOffset=-1.5258789e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9801;
+		};
+		class Item467
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1742.0369,25.77375,14590.637};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9814;
+					type="O_OMovariMrazota_Shooter_Handgun_01";
+					atlOffset=1.5258789e-005;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1743.1738,25.801125,14589.025};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9815;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=1.335144e-005;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1744.2883,25.837143,14591.453};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9816;
+					type="O_OMovariMrazota_Grunt_Fists_01";
+					atlOffset=1.335144e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1743.7327,25.818754,14590.066};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9817;
+					type="O_OMovariMrazota_Rusher_01";
+					atlOffset=1.7166138e-005;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1745.8848,25.826765,14592.557};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9818;
+					type="O_OMovariMrazota_Rusher_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9813;
+			atlOffset=1.5258789e-005;
 		};
 	};
 	class Connections
