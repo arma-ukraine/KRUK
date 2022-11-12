@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1665;
 	mods[]=
 	{
 		"WBK_Zombies_AdvancedEditorSettings",
@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9789;
+		nextID=9793;
 	};
 	class MarkerIDProvider
 	{
@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={984.47607,43.589817,16854.535};
-		dir[]={-0.64238697,-0.45031697,0.62025917};
-		up[]={-0.32402548,0.89280766,0.31286213};
-		aside[]={0.69466317,-3.647292e-007,0.7194435};
+		pos[]={489.12747,31.122211,17019.922};
+		dir[]={0.76527679,-0.45084652,0.45944411};
+		up[]={0.38653573,0.89260149,0.23206188};
+		aside[]={0.51472479,0,-0.85735554};
 	};
 };
 binarizationWanted=0;
@@ -24071,7 +24071,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=459;
+		items=462;
 		class Item0
 		{
 			dataType="Logic";
@@ -51227,8 +51227,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1035.8215,39.979862,16054.144};
-						angles[]={0,0.73451221,-0};
+						position[]={1036.1438,40.073635,16048.619};
+						angles[]={0,5.5748954,-0};
 					};
 					side="East";
 					flags=7;
@@ -51255,7 +51255,6 @@ class Mission
 					};
 					id=9726;
 					type="O_OMovariMrazota_Shooter_Handgun_01";
-					atlOffset=2.6702881e-005;
 				};
 			};
 			class Attributes
@@ -51263,7 +51262,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=9725;
-			atlOffset=2.6702881e-005;
 		};
 		class Item442
 		{
@@ -52242,6 +52240,93 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=9782;
+		};
+		class Item459
+		{
+			dataType="Trigger";
+			position[]={471.59201,26.394066,17005.176};
+			angle=0.06633997;
+			class Attributes
+			{
+				onActivation="{ " \n " if (!((getPlayerUID _x) in [""_SP_PLAYER_1"", ""76561197999599845"", ""76561198130468709""])) then { " \n "  _x setPosASL (getMarkerPos ""respawn_INDEPENDENT""); " \n "  systemChat ""Доступ сюди має виключно лідер СВН.""; " \n " }; " \n "} forEach thisList;";
+				sizeA=2.589;
+				sizeB=2.6459999;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=9789;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.347229;
+		};
+		class Item460
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={471.52737,26.708986,17006.424};
+				angles[]={0.019102637,0.034431692,0.32641384};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=9791;
+			type="Land_WoodenCrate_01_stack_x3_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item461
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={471.17456,26.662203,17004.25};
+				angles[]={0.019102637,1.6419052,0.32641363};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=9792;
+			type="Land_CratesWooden_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
