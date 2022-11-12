@@ -24032,8 +24032,8 @@ class Mission
 		year=2022;
 		month=8;
 		day=9;
-		hour=12;
-		minute=10;
+		hour=0;
+		minute=0;
 		forecastFogBase=250;
 		startFogDecay=0.02;
 		forecastFogDecay=0.02;
