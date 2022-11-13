@@ -16,7 +16,7 @@ disableChannels[] = {
 
 class Header
 {
-	gameType =  Coop;	// Game type
+	gameType = Coop;	// Game type
 };
 
 class CfgDifficultyPresets
@@ -29,8 +29,8 @@ class CfgDifficultyPresets
 
 	// Parameters that affect the Limited distance choice for Group Indicators, Friendly Name Tags, Enemy Name Tags and Detected Mines.
 	// They determine on which distance the indicators are fully visible and how many more meters it takes until the indicator fades-out completely.
-	fadeDistanceStart = 5.0;
-	fadeDistanceSpan = 5.0;
+	fadeDistanceStart = 0;
+	fadeDistanceSpan = 0;
 
 	recoilCoef = 1.0;
 	visionAidCoef = 1.0;
