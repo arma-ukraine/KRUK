@@ -9,7 +9,7 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"A3_Modules_F", "A3_Characters_F", "A3_Weapons_F", "CBA_main", "JAGER_main", "JAGER_factions"};
+    requiredAddons[] = {"A3_Modules_F", "A3_Characters_F", "A3_Weapons_F", "CBA_main", "JAGER_main"};
     units[] = {};
     weapons[] = {};
   };

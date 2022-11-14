@@ -2,9 +2,7 @@
 TRACE_1("trace", nil);
 
 // Server.
-if (isServer) then {
-	addMissionEventHandler ["EntityKilled", FUNC(handleEntityKilled)];
-};
+if (isServer) then {};
 
 // Client.
 if (hasInterface) then {

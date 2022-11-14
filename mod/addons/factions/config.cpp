@@ -9,8 +9,12 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"A3_Characters_F", "CBA_main", "WBK_MeleeMechanics", "JAGER_main"};
-    units[] = {QGVAR(test)};
+    requiredAddons[] = {"A3_Characters_F", "CBA_main", "WBK_MeleeMechanics", "JAGER_main", "JAGER_money"};
+    units[] = {
+        QGVAR(Mrazota_Melee_Fists),
+        QGVAR(Mrazota_Melee_Fists_Rusher),
+        QGVAR(Mrazota_Melee_Weapon),
+        QGVAR(Mrazota_Melee_Weapon_Rusher)};
     weapons[] = {};
   };
 };
@@ -18,4 +22,4 @@ class CfgPatches
 PRELOAD_ADDONS;
 
 #include "CfgEventhandlers.cpp"
-#include "cfgFactions.cpp"
+#include "CfgFactions.cpp"
