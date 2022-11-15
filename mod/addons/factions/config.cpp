@@ -15,7 +15,10 @@ class CfgPatches
         QGVAR(Mrazota_Melee_Fists_Rusher),
         QGVAR(Mrazota_Melee_Weapon),
         QGVAR(Mrazota_Melee_Weapon_Rusher),
-        QGVAR(Mrazota_Firearms_Handgun)};
+        QGVAR(Mrazota_Firearms_Handgun),
+        QGVAR(Mutants_Blind_Dog_Grey),
+        QGVAR(Mutants_Blind_Dog_Brown),
+        QGVAR(Mutants_Blind_Dog_White)};
     weapons[] = {};
   };
 };
@@ -23,4 +26,5 @@ class CfgPatches
 PRELOAD_ADDONS;
 
 #include "CfgEventhandlers.cpp"
-#include "CfgFactions.cpp"
+#include "CfgFactionClasses.cpp"
+#include "CfgVehicles.cpp"
