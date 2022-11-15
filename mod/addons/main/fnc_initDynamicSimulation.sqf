@@ -9,4 +9,4 @@ TRACE_1("trace", nil);
 // Client only.
 {
 	_x enableDynamicSimulation true;
-} forEach allUnits;
+} forEach allGroups;

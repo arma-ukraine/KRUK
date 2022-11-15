@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9999;
+		nextID=10064;
 	};
 	class MarkerIDProvider
 	{
@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1912.1926,79.318077,14860.144};
-		dir[]={-0.8444829,-0.32168385,0.42821717};
-		up[]={-0.28690624,0.94684744,0.14548346};
-		aside[]={0.45225647,1.3562385e-008,0.89188921};
+		pos[]={1410.8431,33.567139,16100.793};
+		dir[]={-0.71945602,-0.37848565,0.5824942};
+		up[]={-0.29426309,0.92554379,0.23824182};
+		aside[]={0.62930471,-8.471543e-007,0.77727014};
 	};
 };
 binarizationWanted=0;
@@ -146,13 +146,14 @@ addons[]=
 	"ace_ballistics",
 	"A3_Weapons_F_Exp",
 	"rhs_c_troops",
-	"JAGER_money"
+	"JAGER_money",
+	"lambs_wp"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=71;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -610,6 +611,12 @@ class AddonsMetaData
 			name="COMPONENT_NAME";
 			author="DiRaven#0001";
 			url="https://discord.gg/DYA3dNS";
+		};
+		class Item70
+		{
+			className="lambs_wp";
+			name="LAMBS Danger WP";
+			author="LAMBS Danger Dev Team";
 		};
 	};
 };
@@ -24129,7 +24136,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=501;
+		items=510;
 		class Item0
 		{
 			dataType="Logic";
@@ -50906,7 +50913,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={531.86523,22.035664,16855.658};
+				position[]={665.74811,26.097548,16931.582};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -50917,7 +50924,7 @@ class Mission
 			};
 			id=9836;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50941,7 +50948,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={530.50592,21.955544,16854.613};
+				position[]={664.38879,26.047125,16930.537};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -50952,6 +50959,7 @@ class Mission
 			};
 			id=9841;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00032043457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50975,7 +50983,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={528.63049,21.857456,16853.432};
+				position[]={662.51337,26.045938,16929.355};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -50986,7 +50994,7 @@ class Mission
 			};
 			id=9842;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51010,7 +51018,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={526.7821,21.850136,16852.104};
+				position[]={660.66498,26.107414,16928.027};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51021,7 +51029,7 @@ class Mission
 			};
 			id=9843;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51045,7 +51053,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={524.88928,21.836954,16851};
+				position[]={658.77216,26.114717,16926.924};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51056,6 +51064,7 @@ class Mission
 			};
 			id=9844;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00031852722;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51079,7 +51088,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={523.32111,21.837696,16849.572};
+				position[]={657.20398,26.096338,16925.496};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51090,7 +51099,7 @@ class Mission
 			};
 			id=9845;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51114,7 +51123,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={521.17596,21.856752,16848.422};
+				position[]={655.05884,26.007879,16924.346};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51125,7 +51134,6 @@ class Mission
 			};
 			id=9846;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51149,7 +51157,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={519.27106,21.814674,16847.297};
+				position[]={653.15393,25.917191,16923.221};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51160,6 +51168,7 @@ class Mission
 			};
 			id=9847;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00032043457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51183,7 +51192,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={517.19391,21.770454,16845.965};
+				position[]={651.07678,25.750669,16921.889};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51194,6 +51203,7 @@ class Mission
 			};
 			id=9848;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00031852722;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51217,7 +51227,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={515.4198,21.76046,16844.521};
+				position[]={649.30267,25.710146,16920.445};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51228,6 +51238,7 @@ class Mission
 			};
 			id=9849;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00032043457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51251,7 +51262,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={529.27411,21.978678,16859.035};
+				position[]={663.15698,25.37731,16934.959};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51262,7 +51273,6 @@ class Mission
 			};
 			id=9850;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51286,7 +51296,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={527.43262,21.859741,16857.281};
+				position[]={661.31549,25.522505,16933.205};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51297,7 +51307,7 @@ class Mission
 			};
 			id=9851;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51321,7 +51331,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={525.76007,21.826269,16856.266};
+				position[]={659.64294,25.588661,16932.189};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51332,7 +51342,7 @@ class Mission
 			};
 			id=9852;
 			type="Land_Grave_dirt_F";
-			atlOffset=-0.00031852722;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51356,7 +51366,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={523.82489,21.795134,16855.049};
+				position[]={657.70776,25.591131,16930.973};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51367,6 +51377,7 @@ class Mission
 			};
 			id=9853;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00032043457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51390,7 +51401,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={521.76642,21.770702,16854.047};
+				position[]={655.64929,25.582876,16929.971};
 				angles[]={0,0.95254833,0};
 			};
 			side="Empty";
@@ -51401,6 +51412,7 @@ class Mission
 			};
 			id=9854;
 			type="Land_Grave_dirt_F";
+			atlOffset=0.00032043457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51870,64 +51882,59 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={909.06494,25.332342,16988.184};
-						angles[]={0,5.0592556,0};
+						position[]={1403.0841,27.287458,16110.157};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						rank="CORPORAL";
 					};
-					id=9880;
-					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
-					atlOffset=-1.9073486e-006;
+					id=10057;
+					type="JAGER_factions_Mrazota_Firearms_Handgun";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={911.37036,25.150448,16986.719};
-						angles[]={0,5.0592556,0};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=9881;
-					type="JAGER_factions_Mrazota_Melee_Fists";
-					atlOffset=1.9073486e-006;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={910.25592,25.054743,16989.203};
-						angles[]={0,5.0592556,0};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-					};
-					id=9882;
-					type="JAGER_factions_Mrazota_Melee_Fists";
-					atlOffset=1.5258789e-005;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={908.78778,25.238886,16989.893};
+						position[]={1406.2792,27.577194,16105.762};
 						angles[]={0,5.0592556,0};
 					};
 					side="East";
@@ -51938,13 +51945,63 @@ class Mission
 					id=9883;
 					type="JAGER_factions_Mrazota_Melee_Fists";
 				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1406.5564,27.691437,16104.053};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9880;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+					atlOffset=1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1407.7473,27.616453,16105.072};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9882;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.7166138e-005;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1408.8618,27.764027,16102.588};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=9881;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=3.8146973e-006;
+				};
 			};
 			class Attributes
 			{
 				dynamicSimulation=1;
 			};
 			id=9879;
-			atlOffset=-1.9073486e-006;
 		};
 		class Item483
 		{
@@ -52268,7 +52325,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1312.349,36.886921,16242.054};
+						position[]={1800.8832,29.14316,15663.216};
 						angles[]={0,5.0592556,0};
 					};
 					side="East";
@@ -52284,7 +52341,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1314.6544,36.866344,16240.589};
+						position[]={1803.1886,29.436466,15661.751};
 						angles[]={0,5.0592556,0};
 					};
 					side="East";
@@ -52294,14 +52351,13 @@ class Mission
 					};
 					id=9905;
 					type="JAGER_factions_Mrazota_Melee_Fists";
-					atlOffset=7.6293945e-006;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1313.5399,36.90588,16243.073};
+						position[]={1802.0741,29.395313,15664.235};
 						angles[]={0,5.0592556,0};
 					};
 					side="East";
@@ -52311,14 +52367,13 @@ class Mission
 					};
 					id=9906;
 					type="JAGER_factions_Mrazota_Melee_Fists";
-					atlOffset=1.5258789e-005;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1312.0718,36.913509,16243.763};
+						position[]={1800.606,29.386724,15664.925};
 						angles[]={0,5.0592556,0};
 					};
 					side="East";
@@ -54281,16 +54336,697 @@ class Mission
 			};
 			id=9994;
 		};
+		class Item501
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1796.8109,26.187092,15637.629};
+				angles[]={0.027298782,0,0.022748843};
+			};
+			areaSize[]={200,-1,200};
+			flags=1;
+			id=9999;
+			type="lambs_wp_TaskPatrol";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_wp_WaypointCount";
+					expression="_this setVariable ['lambs_wp_WaypointCount', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="lambs_wp_enableReinforcement";
+					expression="_this setVariable ['lambs_wp_EnableReinforcement',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="lambs_wp_moveWaypoints";
+					expression="_this setVariable ['lambs_wp_MoveWaypoints',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item502
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1774.7273,22.678642,15632.839};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10001;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1777.0327,22.714628,15631.374};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10002;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1775.9182,22.779716,15633.858};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10003;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.1444092e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1774.4501,22.742365,15634.548};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10004;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10000;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item503
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1790.8787,23.264534,15612.896};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10006;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1793.1841,23.430311,15611.431};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10007;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1792.0696,23.456821,15613.915};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10008;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.1444092e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1790.6014,23.311653,15614.604};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10009;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10005;
+		};
+		class Item504
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1822.6318,27.987265,15630.302};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10011;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1824.9373,28.274221,15628.837};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10012;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1823.8228,28.554907,15631.321};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10013;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.5258789e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1822.3546,28.240503,15632.011};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10014;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10010;
+		};
+		class Item505
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2045.1251,23.388691,15044.466};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10037;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+					atlOffset=1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2047.4305,23.431131,15043.001};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10038;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=3.8146973e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2046.316,23.317484,15045.485};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10039;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2044.8479,23.290096,15046.175};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10040;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10036;
+			atlOffset=1.9073486e-006;
+		};
+		class Item506
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2006.2997,24.443962,14981.543};
+				angles[]={0.03411676,0,6.2627091};
+			};
+			areaSize[]={283.12793,0,261.97705};
+			flags=1;
+			id=10041;
+			type="lambs_wp_TaskPatrol";
+			atlOffset=-0.69092751;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_wp_WaypointCount";
+					expression="_this setVariable ['lambs_wp_WaypointCount', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="lambs_wp_enableReinforcement";
+					expression="_this setVariable ['lambs_wp_EnableReinforcement',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="lambs_wp_moveWaypoints";
+					expression="_this setVariable ['lambs_wp_MoveWaypoints',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item507
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2018.9692,25.110798,15014.089};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10043;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2021.2747,25.010794,15012.624};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10044;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2020.1602,25.049212,15015.108};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10045;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.5258789e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2018.692,25.11175,15015.798};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10046;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10042;
+		};
+		class Item508
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2035.1206,25.059275,14994.146};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10048;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+					atlOffset=1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2037.426,24.971521,14992.681};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10049;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2036.3115,25.014992,14995.165};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10050;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.335144e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2034.8434,25.060884,14995.854};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10051;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10047;
+			atlOffset=1.9073486e-006;
+		};
+		class Item509
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2066.8738,23.978642,15011.552};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=10053;
+					type="JAGER_factions_Mrazota_Melee_Fists_Rusher";
+					atlOffset=1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2069.1792,23.836657,15010.087};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10054;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=3.8146973e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2068.0647,23.855625,15012.571};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10055;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+					atlOffset=1.7166138e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2066.5967,23.945251,15013.261};
+						angles[]={0,5.0592556,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=10056;
+					type="JAGER_factions_Mrazota_Melee_Fists";
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10052;
+			atlOffset=1.9073486e-006;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=10;
 		};
 		class Links
 		{
-			items=2;
+			items=10;
 			class Item0
 			{
 				linkID=0;
@@ -54306,6 +55042,86 @@ class Mission
 				linkID=1;
 				item0=9369;
 				item1=9359;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=9904;
+				item1=9999;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=10014;
+				item1=9999;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=10008;
+				item1=9999;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=10001;
+				item1=9999;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=10037;
+				item1=10041;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=10056;
+				item1=10041;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=10050;
+				item1=10041;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=10043;
+				item1=10041;
 				class CustomData
 				{
 					type="Sync";
