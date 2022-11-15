@@ -56,6 +56,15 @@ class CfgVehicles
 #include "CfgVehiclesRandomizedGear.hpp"
   };
 
+  // Shooter.
+  class O_Soldier_F;
+  class GVAR(Mrazota_Firearms_Handgun) : O_Soldier_F
+  {
+    faction = QGVAR(Mrazota);
+    displayName = "Firearms Handgun";
+#include "CfgVehiclesRandomizedGear.hpp"
+  };
+
   // Hybrid.
 
   // Shooter.

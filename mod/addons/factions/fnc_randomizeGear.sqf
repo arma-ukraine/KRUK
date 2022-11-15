@@ -36,101 +36,49 @@ private _food_items = [
 	"ACE_MRE_SteakVegetables_Item"
 ];
 
-private _civilian_clothes = [
-	"U_I_C_Soldier_Bandit_1_F",
-	"U_I_C_Soldier_Bandit_2_F",
-	"U_I_C_Soldier_Bandit_3_F",
-	"U_I_C_Soldier_Bandit_4_F",
-	"U_I_C_Soldier_Bandit_5_F",
-	"rds_uniform_citizen1",
-	"rds_uniform_citizen2",
-	"rds_uniform_citizen3",
-	"rds_uniform_citizen4",
-	"U_C_Poloshirt_blue",
-	"U_C_Poloshirt_burgundy",
-	"U_C_Poloshirt_redwhite",
-	"U_C_Poloshirt_salmon",
-	"U_C_Poloshirt_stripped",
-	"U_C_Poloshirt_tricolour",
-	"U_BG_Guerilla3_1",
-	"U_C_HunterBody_grn",
-	"U_C_E_LooterJacket_01_F",
-	"U_I_L_Uniform_01_tshirt_black_F",
-	"U_I_L_Uniform_01_tshirt_olive_F",
-	"U_I_L_Uniform_01_tshirt_skull_F",
-	"U_I_L_Uniform_01_tshirt_sport_F",
-	"U_C_Mechanic_01_F",
-	"rds_uniform_Villager1",
-	"rds_uniform_Villager2",
-	"rds_uniform_Villager3",
-	"rds_uniform_Villager4",
-	"rds_uniform_Woodlander1",
-	"rds_uniform_Woodlander2",
-	"rds_uniform_Woodlander3",
-	"rds_uniform_Woodlander4",
-	"rds_uniform_Worker1",
-	"rds_uniform_Worker2",
-	"rds_uniform_Worker3",
-	"rds_uniform_Worker4",
-	"U_C_Poor_1"
-];
-
-private _simple_melee_weapons = [
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Pipe_aluminium",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"Rod",
-	"WBK_SmallHammer",
-	"WBK_SmallHammer",
-	"WBK_SmallHammer",
-	"Bat_Clear",
-	"Bat_Spike",
-	"WBK_axe",
-	"Crowbar"
-];
-// [[[], [], ["WBK_BrassKnuckles", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_brush_axe", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_craftedAxe", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_survival_weapon_2", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_survival_weapon_1", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["IceAxe", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_Katana", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Weap_melee_knife", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Knife_kukri", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Knife_m3", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_pipeStyledSword", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Police_Bat", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Shovel_Russian", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["Shovel_Russian_Rotated", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_ww1_Club", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_survival_weapon_4", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-// [[[], [], ["WBK_survival_weapon_3", "", "", "", [], [], ""], ["U_B_CombatUniform_mcam_worn", []], [], [], "", "G_Balaclava_blk", [], ["", "", "", "", "", ""]], []]
-
 // set gear.
-switch (typeOf _unit) do
+switch (true) do
 {
-	case "JAGER_factions_Mrazota_Melee_Fists";
-	case "JAGER_factions_Mrazota_Melee_Fists_Rusher";
-	case "JAGER_factions_Mrazota_Melee_Weapon";
-	case "JAGER_factions_Mrazota_Melee_Weapon_Rusher": {
+	case (["JAGER_factions_Mrazota", typeOf _unit] call BIS_fnc_inString): {
 		// Add uniform.
-		_unit forceAddUniform (selectRandom _civilian_clothes);
+		_unit forceAddUniform (selectRandom [
+			"U_I_C_Soldier_Bandit_1_F",
+			"U_I_C_Soldier_Bandit_2_F",
+			"U_I_C_Soldier_Bandit_3_F",
+			"U_I_C_Soldier_Bandit_4_F",
+			"U_I_C_Soldier_Bandit_5_F",
+			"rds_uniform_citizen1",
+			"rds_uniform_citizen2",
+			"rds_uniform_citizen3",
+			"rds_uniform_citizen4",
+			"U_C_Poloshirt_blue",
+			"U_C_Poloshirt_burgundy",
+			"U_C_Poloshirt_redwhite",
+			"U_C_Poloshirt_salmon",
+			"U_C_Poloshirt_stripped",
+			"U_C_Poloshirt_tricolour",
+			"U_BG_Guerilla3_1",
+			"U_C_HunterBody_grn",
+			"U_C_E_LooterJacket_01_F",
+			"U_I_L_Uniform_01_tshirt_black_F",
+			"U_I_L_Uniform_01_tshirt_olive_F",
+			"U_I_L_Uniform_01_tshirt_skull_F",
+			"U_I_L_Uniform_01_tshirt_sport_F",
+			"U_C_Mechanic_01_F",
+			"rds_uniform_Villager1",
+			"rds_uniform_Villager2",
+			"rds_uniform_Villager3",
+			"rds_uniform_Villager4",
+			"rds_uniform_Woodlander1",
+			"rds_uniform_Woodlander2",
+			"rds_uniform_Woodlander3",
+			"rds_uniform_Woodlander4",
+			"rds_uniform_Worker1",
+			"rds_uniform_Worker2",
+			"rds_uniform_Worker3",
+			"rds_uniform_Worker4",
+			"U_C_Poor_1"
+		]);
 
 		// Add goggles.
 		_unit addGoggles "G_Balaclava_blk";
@@ -154,11 +102,58 @@ switch (typeOf _unit) do
 		// Only for "melee weapon" units.
 		if (["Melee_Weapon", typeOf _unit] call BIS_fnc_inString) then {
 			// Add melee weapon.
-			_unit addWeapon (selectRandom _simple_melee_weapons);
-		}
+			_unit addWeapon (selectRandom [
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Pipe_aluminium",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"Rod",
+				"WBK_SmallHammer",
+				"WBK_SmallHammer",
+				"WBK_SmallHammer",
+				"Bat_Clear",
+				"Bat_Spike",
+				"WBK_axe",
+				"Crowbar"
+			]);
+		};
 
-		// Only for "shooter" units.
-		// ?
+		// for Firearms_Handgun units.
+		if (["Firearms_Handgun", typeOf _unit] call BIS_fnc_inString) then {
+			private _random_handgun = selectRandom [
+				"rhs_weap_6p53",
+				"rhs_weap_cz99",
+				"rhsusf_weap_glock17g4",
+				"rhsusf_weap_m1911a1",
+				"rhsusf_weap_m9",
+				"hgun_Pistol_01_F",
+				"rhs_weap_pya",
+				"hgun_Rook40_F",
+				"hgun_P07_F",
+				"hgun_P07_blk_F",
+				"rhs_weap_makarov_pm",
+				"rhs_weap_savz61_folded",
+				"rhs_weap_tt33",
+				"rhs_weap_type94_new"
+			];
+			_unit addMagazines [selectRandom (_random_handgun call BIS_fnc_compatibleMagazines), 5];
+			_unit addWeaponGlobal _random_handgun;
+		};
 	};
 };
 

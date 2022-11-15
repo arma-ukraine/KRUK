@@ -14,7 +14,8 @@ class CfgPatches
         QGVAR(Mrazota_Melee_Fists),
         QGVAR(Mrazota_Melee_Fists_Rusher),
         QGVAR(Mrazota_Melee_Weapon),
-        QGVAR(Mrazota_Melee_Weapon_Rusher)};
+        QGVAR(Mrazota_Melee_Weapon_Rusher),
+        QGVAR(Mrazota_Firearms_Handgun)};
     weapons[] = {};
   };
 };
