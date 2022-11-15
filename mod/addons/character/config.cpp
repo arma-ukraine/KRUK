@@ -16,6 +16,7 @@ class CfgPatches
         "ACE_medical",
         "CBA_main",
         "PY3_Pythia",
+        // "armst_dog",?
         "JAGER_main",
         "JAGER_state"};
     units[] = {

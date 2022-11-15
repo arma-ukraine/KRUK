@@ -3,7 +3,9 @@ TRACE_1("trace", nil);
 
 GVARMAIN(tfarLoaded) = isClass (configfile >> "CfgPatches" >> "tfar_core");
 
-if (isServer) then {};
+if (isServer) then {
+	call FUNC(initEntityKilledHandling);
+};
 
 if (hasInterface) then {
 	waitUntil {
@@ -12,5 +14,5 @@ if (hasInterface) then {
 
 	call FUNC(initFuelConsumption);
 	call FUNC(initColorCorrection);
-	call FUNC(initEntityKilledHandling);
+	call FUNC(initUnarmed);
 };
