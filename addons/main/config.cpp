@@ -17,6 +17,6 @@ class CfgPatches
 
 PRELOAD_ADDONS;
 
-#include "CfgEventhandlers.cpp"
-#include "CfgFactionClasses.cpp"
-#include "CfgVehicles.cpp"
+#include "CfgEventhandlers.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"
