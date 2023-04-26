@@ -23,7 +23,7 @@
     {
       "label": "run-editor",
       "type": "shell",
-      "command": "start python3 run_editor.py",
+      "command": "hemtt.exe launch",
       "group": {
         "kind": "build",
       }

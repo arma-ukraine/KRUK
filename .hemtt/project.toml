@@ -1,0 +1,15 @@
+name = "Jager"
+mainprefix = "x"
+prefix = "JAGER"
+
+preprocess = false # Default: true
+
+[hemtt.launch]
+workshop = [
+    "450814997", # CBA_A3
+    "1779063631", # Zeus Enhanced
+    "2369477168", # Advanced Developer Tools
+]
+parameters = [
+    "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER-test.VR\\mission.sqm\"",
+]
