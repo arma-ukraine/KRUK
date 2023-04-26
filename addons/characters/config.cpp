@@ -4,12 +4,12 @@ class CfgPatches
 {
   class ADDON
   {
-    name = "Jager Main";
+    name = "Jager Characters";
     author = "DiRaven#0001";
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"CBA_main"};
+    requiredAddons[] = {"ACE_medical", "CBA_main", "JAGER_main"};
     units[] = {};
     weapons[] = {};
   };
@@ -17,6 +17,6 @@ class CfgPatches
 
 PRELOAD_ADDONS;
 
-#include "CfgEventhandlers.hpp"
+#include "CfgEventHandlers.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"

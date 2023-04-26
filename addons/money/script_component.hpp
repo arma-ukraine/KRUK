@@ -1,5 +1,5 @@
 #define PREFIX JAGER
-#define COMPONENT main
+#define COMPONENT money
  
 // #define DEBUG_MODE_FULL
 

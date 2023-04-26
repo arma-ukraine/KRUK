@@ -7,8 +7,12 @@ preprocess = false # Default: true
 [hemtt.launch]
 workshop = [
     "450814997", # CBA_A3
-    "1779063631", # Zeus Enhanced
     "2369477168", # Advanced Developer Tools
+    "1779063631", # Zeus Enhanced
+    "463939057", # ACE
+    "2018593688", # ACE Zeus Enhanced Compatibility
+    "2291129343", # WBK Melee
+    "2789152015", # WBK Zombies
 ]
 parameters = [
     "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER-test.VR\\mission.sqm\"",
