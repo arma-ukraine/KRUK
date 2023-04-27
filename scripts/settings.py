@@ -8,6 +8,7 @@ SERVER_PATH = pathlib.Path("E:/SteamLibrary/steamapps/common/Arma 3 Server")
 SERVER_PROFILE_PATH = pathlib.Path(PROJECT_PATH / "server" / "server_profile")
 SERVER_SETTINGS_PATH = pathlib.Path(PROJECT_PATH / "server" / "server.cfg")
 WORKSHOP_PATH = pathlib.Path("E:/SteamLibrary/steamapps/workshop/content/107410")
+JAGER_MOD_ID = "2885420087"
 
 
 with open("preset.html") as fh:
