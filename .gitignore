@@ -7,5 +7,7 @@
 *.bisign
 *.rpt
 *.log
+__pycache__
 
 include
+releases

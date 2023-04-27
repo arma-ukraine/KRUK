@@ -15,7 +15,15 @@
     {
       "label": "publish",
       "type": "shell",
-      "command": "python3 publish.py",
+      "command": "python3 -m scripts.publish",
+      "group": {
+        "kind": "build",
+      }
+    },
+    {
+      "label": "generate-preset",
+      "type": "shell",
+      "command": "python3 -m scripts.generate_preset",
       "group": {
         "kind": "build",
       }

@@ -6,14 +6,61 @@ preprocess = false # Default: true
 
 [hemtt.launch]
 workshop = [
+    # Minimum requirements for VR test.
     "450814997", # CBA_A3
     "2369477168", # Advanced Developer Tools
-    "1779063631", # Zeus Enhanced
+    "623475643", # Eden Enhanced
+
     "463939057", # ACE
+    "2020940806", # KAT Advanced Medical
+
+    "1779063631", # Zeus Enhanced
     "2018593688", # ACE Zeus Enhanced Compatibility
-    "2291129343", # WBK Melee
+
+    # Full mission requirements, can be commented out for quick VR tests.
+    "583496184", # CUP Terrains - Core
+    "1128256978", # Chernarus Redux
+    
+    "642912021", # Zeus Templates/Compositions
+    "2352603233", # GreenMag
+    "2352615767", # GreenMag RHS USAF COMPAT
+    "2291129343", # WBK Improved Melee System
+    "766491311", # ACE3 Animations and Actions
+    "333310405", # Enhanced Movement
+    "825174634", # Suppress
+    "894678801", # TFAR
+    "1556296528", # Horror Mod
+    "1998821941", # Ukrainian Language
+    "2791403093", # Better Inventory
+    "1990653162", # Drongos Map Population
+    "2673284246", # Ukrainian Factions Project
+    "861133494", # JSRS SOUNDMOD
+
     "2789152015", # WBK Zombies
+    "1673456286", # 3cb Factions
+    "612930542", # RDS Civilian Pack
+    "2616555444", # Necroplague Mutants
+
+    "843577117", # RHS USAF
+    "773125288", # ACE Compat: RHS USAF
+    "1180533757", # JSRS RHS USAF
+    "843425103", # RHS AFRF
+    "773131200", # ACE Compat: RHS AFRF
+    "945476727", # JSRS RHS AFRF
+    "843593391", # RHS GREF
+    "884966711", # ACE Compat: RHS GREF
+    "1180534892", # JSRS RHS GREF
+    "843632231", # RHS SAF
+    "2174495332", # ACE Compat: RHS SAF
+    "1486541773", # JSRS RHS SAF
 ]
+
+# Full mission.
 parameters = [
-    "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER-test.VR\\mission.sqm\"",
+    "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER.chernarusredux\\mission.sqm\"",
 ]
+
+# Quick VR test.
+# parameters = [
+#     "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER-test.VR\\mission.sqm\"",
+# ]
