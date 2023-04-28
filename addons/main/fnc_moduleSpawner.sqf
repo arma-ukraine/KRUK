@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
 /*
-	Spawner module - creates units when synced triggers are activated.
+	Spawner module - spawns units and loot.
 	
 	call FUNC(...);
 */
@@ -17,28 +17,15 @@ _trigger setTriggerActivation ["ANYPLAYER", "PRESENT", true]; // repeating
 _trigger setTriggerArea [_logicArea#0 + 2 * _spawnActivationDistance, _logicArea#1 + 2 * _spawnActivationDistance, getDir _logic, false];
 _trigger setVariable ["logic", _logic];
 
-// load and store units and spawn area for spawning.
-_unitClasses = [];
-private "_side";
-private _units = synchronizedObjects _logic;
-{
-	if (isNil "_side") then {
-		_side = side group _x;
-	};
-	_unitClasses pushBack typeOf _x;
-	deleteVehicle _x;
-} forEach _units;
-_logic setVariable ["unitClasses", _unitClasses];
-_logic setVariable ["side", _side];
-
 // set trigger statements.
 _trigger setTriggerStatements ["this", "call" + " " + str {
 	// Activated.
 	private _logic = thisTrigger getVariable "logic";
-	private _unitClasses = _logic getVariable "unitClasses";
-	private _side = _logic getVariable "side";
 	private _logicArea = _logic getVariable "objectArea";
 
+	// units.
+	private _side = call compile (_logic getVariable "UnitsSide");
+	private _unitClasses = _logic getVariable "UnitsClasses" splitString ", ";
 	private _minGroupSize = _logic getVariable "MinGroupSize";
 	private _maxGroupSize = _logic getVariable "MaxGroupSize";
 	private _minGroups = _logic getVariable "MinGroups";
@@ -56,8 +43,17 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		_group deleteGroupWhenEmpty true;
 	};
 	_logic setVariable ["units", _units];
+
+	// items.
+	// Parse items.
+	// _object = createVehicle ["GroundWeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
+	// _object addItemCargoGlobal [_classname, 1];
+
+	// spawn.
+	// Save all spawned containers.
 }, "call" + " " + str {
 	// Deactivated.
+	// units.
 	private _logic = thisTrigger getVariable "logic";
 	private _units = _logic getVariable "units";
 	if (!isNil "_units") then {
@@ -65,6 +61,7 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 			deleteVehicle _x;
 		} forEach _units;
 	};
+	// items.
 }];
 
 true;
