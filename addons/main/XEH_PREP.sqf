@@ -6,4 +6,3 @@ PREP(moduleFuelConsumption);
 PREP(moduleUnarmed);
 PREP(moduleCharacters);
 PREP(moduleUnitSpawner);
-PREP(initSpawnerModules);

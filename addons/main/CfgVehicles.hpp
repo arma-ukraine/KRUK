@@ -89,16 +89,23 @@ class CfgVehicles
         function = QFUNC(moduleUnitSpawner);
         init = QFUNC(moduleUnitSpawner);
         category = QGVAR(modules);
-        scope = 2;
-        scopeCurator = 1;
+        scope = 2; // EDEN: 1 - hide, 2 - show
+        scopeCurator = 1; // ZEUS: 1 - hide, 2 - show
 
-        isGlobal = 0;           // Execute on server only.
-        isTriggerActivated = 1; // Synced trigger must be activated.
-        canSetArea = 1;         // Can specify area.
+        isGlobal = 0;           // 0 - server only, 1 - everywhere
+        isTriggerActivated = 0; // 0 - activates once, 1 - requires trigger activation
+        canSetArea = 1;         // 0 - does not specify area, 1 - specifies area
 
         class Attributes : AttributesBase
         {
             // Module-specific arguments:
+            class SpawnActivationDistance : Edit
+            {
+                property = QGVAR(moduleSpawnActivationDistance);
+                displayName = "Spawn trigger extra distance";
+                typeName = "NUMBER";
+                defaultValue = "500";
+            };
             class MinGroupSize : Edit
             {
                 property = QGVAR(moduleUnitSpawnerMinGroupSize);
@@ -140,7 +147,7 @@ class CfgVehicles
         // Module description (must inherit from base class, otherwise pre-defined entities won't be available):
         class ModuleDescription : ModuleDescription
         {
-            description = "Short module description"; // Short description, will be formatted as structured text
+            description = "Will spawn synced units in the area once any player comes closer then module edge + spawn trigger extra distance. Will despawn units once player leaves the area. DO NOT mix sides!"; // Short description, will be formatted as structured text
             sync[] = {"LocationArea_F"};              // Array of synced entities (can contain base classes)
 
             class LocationArea_F
