@@ -19,26 +19,48 @@ _trigger setVariable ["logic", _logic];
 
 // Collect objects for spawning.
 // groups
-private ["_groupsDefinitions", "_side"];
-_groupsDefinitions = [];
+private _groupsDefinitions = createHashMap;
+private _lootDefinitions = createHashMapFromArray [
+	["items", createHashMap],
+	["weapons", createHashMap],
+	["magazines", createHashMap],
+	["backpacks", createHashMap]
+];
 // for each synchronized object.
 {
 	switch (true) do {
 		// for men only.
 		case (_x isKindOf "Man"): {
-			private _groupDefinition = [side _x, []];
-			// Gather all units from the group and prepare group definition.
+			private _group = group _x;
+			private _groupDefinition = _groupsDefinitions get groupId _group;
+			if (isNil "_groupDefinition") then {
+				_groupDefinition = [side _x, []]
+			};
+			_groupDefinition#1 pushBack typeOf _x;
+			_groupsDefinitions set [groupId _group, _groupDefinition];
+		};
+		case (_x isKindOf "ReammoBox_F"): {
 			{
-				_groupDefinition#1 pushBack typeOf _x;
-				deleteVehicle _x;
-			} forEach units group _x;
-			_groupsDefinitions pushBack _groupDefinition;
-			// Delete object as we are not interested in it any more.
+				private _cargo = _x#1;
+				private _lootDefinition = _lootDefinitions get _x#0;
+				for "_i" from 0 to ((count (_cargo#0)) - 1) do {
+					_class = _cargo#0#_i;
+					_amount = _cargo#1#_i;
+					_stored_amount = _lootDefinition get _class;
+					if (isNil "_stored_amount") then {
+						_lootDefinition set [_class, _amount];
+					} else {
+						_lootDefinition set [_class, _stored_amount + _amount];
+					};
+				};
+			} forEach [["items", getItemCargo _x], ["weapons", getWeaponCargo _x], ["magazines", getMagazineCargo _x], ["backpacks", getBackpackCargo _x]];
 		};
 		default {};
 	};
+	deleteVehicle _x;
 } forEach synchronizedObjects _logic;
 _logic setVariable ["groupsDefinitions", _groupsDefinitions];
+_logic setVariable ["lootDefinitions", _lootDefinitions];
 
 // TODO: items
 
@@ -54,42 +76,55 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 	private _groupsDefinitions = _logic getVariable "groupsDefinitions";
 	private _units = [];
 	for "_" from 1 to ([_minGroups, _maxGroups] call BIS_fnc_randomInt) do {
-		_groupDefinition = selectRandom _groupsDefinitions;
+		_groupDefinition = selectRandom (values _groupsDefinitions);
 		private _group = createGroup (_groupDefinition#0);
 		{
 			private _unitPos = [getPos _logic, _logicArea] call BIS_fnc_randomPosTrigger;
-			private _unit = _group createUnit [_x, _unitPos, [], 0, "FORM"];
+			private _unit = _group createUnit [_x, _unitPos, [], 0, "NONE"];
+			_unit setDir ([0, 360] call BIS_fnc_randomInt);
 			_units pushBack _unit;
 		} forEach (_groupDefinition#1);
 		_group deleteGroupWhenEmpty true;
 	};
 	_logic setVariable ["units", _units];
 
-	if (true) exitWith {};
 	// spawn items.
-	// Parse items.
-	// 1-3*ItemMap, 1-20*ItemWatch
-	private _items = _logic getVariable "Items";
+	private _handlers = [
+		["items", {
+			_this#0 addItemCargoGlobal [_this#1, _this#2]
+		}],
+		["weapons", {
+			_this#0 addWeaponCargoGlobal [_this#1, _this#2]
+		}],
+		["magazines", {
+			_this#0 addMagazineCargoGlobal [_this#1, _this#2]
+		}],
+		["backpacks", {
+			_this#0 addItemCargoGlobal [_this#1, _this#2]
+		}]
+	];
+	private _lootDefinitions = _logic getVariable "lootDefinitions";
+	private _lootContainers = [];
 	{
-		// Current result is saved in variable _x
-		(_x splitString "*") params ["_counts", "_className"];
-		(_counts splitString "-") params ["_countMin", "_countMax"];
-		private _count = [_countMin, _countMax] call BIS_fnc_randomInt;
-		for "_" from 1 to _count do {
-			private _pos = [getPos _logic, _logicArea] call BIS_fnc_randomPosTrigger;
-			_object = createVehicle ["GroundWeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
-			_object addItemCargoGlobal [_classname, 1];
-		};
-	} forEach _items splitString ", ";
-
-	// 
-
-	// spawn.
-	// Save all spawned containers.
+		private _handler = _x#1;
+		private _definitions = _lootDefinitions get _x#0;
+		{
+			private _class = _x;
+			private _amount = _y;
+			for "_" from 1 to _amount do {
+				private _pos = [getPos _logic, _logicArea] call BIS_fnc_randomPosTrigger;
+				_object = createVehicle ["GroundWeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
+				_object setDir ([0, 360] call BIS_fnc_randomInt);
+				[_object, _class, 1] call _handler;
+				_lootContainers pushBack _object;
+			};
+		} forEach _definitions;
+	} forEach _handlers;
+	_logic setVariable ["lootContainers", _lootContainers];
 }, "call" + " " + str {
 	// Deactivated.
-	// units.
 	private _logic = thisTrigger getVariable "logic";
+	// units.
 	private _units = _logic getVariable "units";
 	if (!isNil "_units") then {
 		{
@@ -97,6 +132,12 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		} forEach _units;
 	};
 	// items.
+	private _lootContainers = _logic getVariable "lootContainers";
+	if (!isNil "_lootContainers") then {
+		{
+			deleteVehicle _x;
+		} forEach _lootContainers;
+	};
 }];
 
 true;

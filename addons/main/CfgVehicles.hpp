@@ -133,8 +133,8 @@ class CfgVehicles
         // Module description (must inherit from base class, otherwise pre-defined entities won't be available):
         class ModuleDescription : ModuleDescription
         {
-            description = "Spawns synced groups and items in the area once any player comes closer then module edge + spawn trigger extra distance. Despawns groups and items once player leaves the area."; // Short description, will be formatted as structured text
-            sync[] = {"LocationArea_F"};                                                                                                                                                                     // Array of synced entities (can contain base classes)
+            description = "Spawns synced groups and items in the area once any player comes closer then module edge + spawn trigger extra distance. Each group must be synced exactly once.<br>Despawns groups and items once player leaves the area."; // Short description, will be formatted as structured text
+            sync[] = {"LocationArea_F"};                                                                                                                                                                                                                // Array of synced entities (can contain base classes)
 
             class LocationArea_F
             {
