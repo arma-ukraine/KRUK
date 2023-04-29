@@ -10,7 +10,7 @@ if (!hasInterface) exitWith {};
 waitUntil {
 	!isNull player
 };
-params ["_logic", "_units", "_is_activated"];
+params ["_logic"];
 scopeName "main";
 private _buyPriceMultiplier = _logic getVariable "BuyPriceMultiplier";
 

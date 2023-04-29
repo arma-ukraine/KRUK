@@ -1,12 +1,12 @@
 PREP(moduleAoeHint);
 PREP(moduleBodyLoot);
+PREP(moduleBuyer);
+PREP(moduleCharacter);
 PREP(moduleColorCorrection);
 PREP(moduleEditorDynamicSimulation);
 PREP(moduleFuelConsumption);
-PREP(moduleUnarmed);
-PREP(moduleCharacters);
 PREP(moduleSpawner);
-PREP(moduleBuyer);
+PREP(moduleUnarmed);
 
 PREP(addMoney);
 PREP(amountToBanknotes);

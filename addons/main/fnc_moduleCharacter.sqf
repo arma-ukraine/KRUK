@@ -11,38 +11,27 @@ if (!hasInterface) exitWith {};
 waitUntil {
 	!isNull player
 };
+params ["_logic"];
 
-// =================================================================================
-// Characters database.
-private _characters = createHashMap;
-_characters set["default", createHashMapFromArray [ // default
-	["driver", ["Car", "Motorcycle"]], // can drive cars and motorcycles by default
-	["turret", ["Car", "Motorcycle"]], // can drive cars and motorcycles by default
+systemChat format["%1", _logic getVariable "ExplosiveSpecialist"];
 
-	["aim_coef", 50.0],
-	["recoil_coef", 50.0],
-	["camouflage_coef", 2.0],
-	["audible_coef", 2.0],
+// Retrieve parameters.
+private _character = player getVariable QGVAR(character);
+if (isNil "_character" or (getPlayerUID player == (_logic getVariable "OwnerId"))) then {
+	player setVariable [QGVAR(character), createHashMapFromArray [
+		["driver", _logic getVariable "CanDrive"],
+		["turret", _logic getVariable "CanTurret"],
 
-	["explosive_specialist", false],
-	["medic", 0], // 0 - none, 1 - medic, 2 - doctor
-	["engineer", 0] // 0 - none, 1 - engineer, 2 - advanced engineer
-]];
-_characters set["76561197999599845", createHashMapFromArray [ // DiRaven
-	["medic", 1], // 0 - none, 1 - medic, 2 - doctor
-	["explosive_specialist", true]
-]];
+		["aim_coef", _logic getVariable "AimCoef"],
+		["recoil_coef", _logic getVariable "RecoilCoef"],
+		["camouflage_coef", _logic getVariable "CamouflageCoef"],
+		["audible_coef", _logic getVariable "AudibleCoef"],
 
-// =================================================================================
-// Retrieve current character data.
-private _character = _characters get "default";
-private _overrides = _characters get getPlayerUID player;
-if (!isNil "_overrides") then {
-	{
-		_character set [_x, _y];
-	} forEach _overrides;
+		["explosive_specialist", _logic getVariable "ExplosiveSpecialist"],
+		["medic", _logic getVariable "Medic"], // 0 - none, 1 - medic, 2 - doctor
+		["engineer", _logic getVariable "Engineer"] // 0 - none, 1 - engineer, 2 - advanced engineer
+	], true];
 };
-player setVariable [QGVAR(character), _character, true];
 
 // =================================================================================
 // apply character data.

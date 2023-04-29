@@ -7,7 +7,7 @@ TRACE_1("trace", nil);
 */
 // Server only.
 if (!isServer) exitWith {};
-params ["_logic", "_units", "_is_activated"];
+params ["_logic"];
 private _spawnActivationDistance = _logic getVariable "SpawnActivationDistance";
 
 // Create activation trigger.
