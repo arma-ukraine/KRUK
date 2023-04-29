@@ -11,7 +11,7 @@ TRACE_1("trace", nil);
 */
 
 params ["_amount"];
-private _banknotes_config = "inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'JAGER_money_Uah')" configClasses (configFile >> "CfgWeapons");
+private _banknotes_config = "inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'JAGER_main_Uah')" configClasses (configFile >> "CfgWeapons");
 private _nominals = [_banknotes_config, {
 	getNumber (_x >> "value")
 }] call CBA_fnc_filter;
@@ -30,7 +30,7 @@ _nominals sort false;
 	};
 	while { _sum + _x <= _amount } do {
 		_sum = _sum + _x;
-		_banknotes pushBack (format ["JAGER_money_Uah_%1", _x]);
+		_banknotes pushBack (format ["JAGER_main_Uah_%1", _x]);
 	};
 } forEach (_nominals);
 

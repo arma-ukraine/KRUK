@@ -20,3 +20,4 @@ PRELOAD_ADDONS;
 #include "CfgEventhandlers.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

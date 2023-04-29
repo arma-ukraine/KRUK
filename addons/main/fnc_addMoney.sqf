@@ -42,7 +42,7 @@ switch (true) do {
 		private _player_banknotes = [items _target, [], {
 			getNumber (configFile >> "CfgWeapons" >> _x >> "value")
 		}, "ASCEND", {
-			_x isKindOf ["JAGER_money_Uah", configFile >> "CfgWeapons"]
+			_x isKindOf ["JAGER_main_Uah", configFile >> "CfgWeapons"]
 		}] call BIS_fnc_sortBy;
 
 		private _sum = 0;
