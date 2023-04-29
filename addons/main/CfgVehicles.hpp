@@ -106,20 +106,6 @@ class CfgVehicles
                 typeName = "NUMBER";
                 defaultValue = "500";
             };
-            class MinGroupSize : Edit
-            {
-                property = QGVAR(moduleSpawnerMinGroupSize);
-                displayName = "Units: min per group";
-                typeName = "NUMBER";
-                defaultValue = "3";
-            };
-            class MaxGroupSize : Edit
-            {
-                property = QGVAR(moduleSpawnerMaxGroupSize);
-                displayName = "Units: max per group";
-                typeName = "NUMBER";
-                defaultValue = "5";
-            };
             class MinGroups : Edit
             {
                 property = QGVAR(moduleSpawnerMinGroups);
@@ -134,51 +120,6 @@ class CfgVehicles
                 typeName = "NUMBER";
                 defaultValue = "3";
             };
-            class UnitsSide : Combo
-            {
-                property = QGVAR(moduleSpawnerUnitsSide);
-                displayName = "Units: side";
-                typeName = "STRING";
-                defaultValue = "'blufor'";
-                class Values
-                {
-                    class BLUFOR
-                    {
-                        name = "BLUFOR";
-                        value = "blufor";
-                    };
-                    class OPFOR
-                    {
-                        name = "OPFOR";
-                        value = "opfor";
-                    };
-                    class INDEPENDENT
-                    {
-                        name = "INDEPENDENT";
-                        value = "independent";
-                    };
-                    class CIVILIAN
-                    {
-                        name = "CIVILIAN";
-                        value = "civilian";
-                    };
-                };
-            };
-            class UnitsClasses : Edit
-            {
-                property = QGVAR(moduleSpawnerUnitsClasses);
-                displayName = "Units";
-                typeName = "STRING";
-                defaultValue = "'B_Soldier_F,B_RangeMaster_F'";
-            };
-
-            class ItemsClasses : Edit
-            {
-                property = QGVAR(moduleSpawnerItemsClasses);
-                displayName = "Items";
-                typeName = "STRING";
-                defaultValue = "'1-3*ItemMap,1-20*ItemWatch'";
-            };
 
             class ModuleDescription : ModuleDescription
             {
@@ -192,8 +133,8 @@ class CfgVehicles
         // Module description (must inherit from base class, otherwise pre-defined entities won't be available):
         class ModuleDescription : ModuleDescription
         {
-            description = "Will spawn synced units in the area once any player comes closer then module edge + spawn trigger extra distance. Will despawn units once player leaves the area. DO NOT mix sides!"; // Short description, will be formatted as structured text
-            sync[] = {"LocationArea_F"};                                                                                                                                                                         // Array of synced entities (can contain base classes)
+            description = "Spawns synced groups and items in the area once any player comes closer then module edge + spawn trigger extra distance. Despawns groups and items once player leaves the area."; // Short description, will be formatted as structured text
+            sync[] = {"LocationArea_F"};                                                                                                                                                                     // Array of synced entities (can contain base classes)
 
             class LocationArea_F
             {
