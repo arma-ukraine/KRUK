@@ -8,7 +8,7 @@ class GVAR(Uah) : ItemCore
   type = 4096;
   picture = "";
   descriptionShort = "";
-  value = 0;
+  GVAR(value) = 0;
   class ItemInfo : InventoryItem_Base_F
   {
     mass = 0.01;
@@ -20,7 +20,7 @@ class GVAR(Uah_1) : GVAR(Uah)
   displayName = "Банкнота 1 грн";
   picture = QPATHTOF(data\1hrn.paa);
   descriptionShort = "Банкнота номіналом 1 гривня.";
-  value = 1;
+  GVAR(value) = 1;
 };
 class GVAR(Uah_2) : GVAR(Uah)
 {
@@ -28,7 +28,7 @@ class GVAR(Uah_2) : GVAR(Uah)
   displayName = "Банкнота 2 грн";
   picture = QPATHTOF(data\2hrn.paa);
   descriptionShort = "Банкнота номіналом 2 гривні.";
-  value = 2;
+  GVAR(value) = 2;
 };
 class GVAR(Uah_5) : GVAR(Uah)
 {
@@ -36,7 +36,7 @@ class GVAR(Uah_5) : GVAR(Uah)
   displayName = "Банкнота 5 грн";
   picture = QPATHTOF(data\5hrn.paa);
   descriptionShort = "Банкнота номіналом 5 гривень.";
-  value = 5;
+  GVAR(value) = 5;
 };
 class GVAR(Uah_10) : GVAR(Uah)
 {
@@ -44,7 +44,7 @@ class GVAR(Uah_10) : GVAR(Uah)
   displayName = "Банкнота 10 грн";
   picture = QPATHTOF(data\10hrn.paa);
   descriptionShort = "Банкнота номіналом 10 гривень.";
-  value = 10;
+  GVAR(value) = 10;
 };
 class GVAR(Uah_20) : GVAR(Uah)
 {
@@ -52,7 +52,7 @@ class GVAR(Uah_20) : GVAR(Uah)
   displayName = "Банкнота 20 грн";
   picture = QPATHTOF(data\20hrn.paa);
   descriptionShort = "Банкнота номіналом 20 гривень.";
-  value = 20;
+  GVAR(value) = 20;
 };
 class GVAR(Uah_50) : GVAR(Uah)
 {
@@ -60,7 +60,7 @@ class GVAR(Uah_50) : GVAR(Uah)
   displayName = "Банкнота 50 грн";
   picture = QPATHTOF(data\50hrn.paa);
   descriptionShort = "Банкнота номіналом 50 гривень.";
-  value = 50;
+  GVAR(value) = 50;
 };
 class GVAR(Uah_100) : GVAR(Uah)
 {
@@ -68,7 +68,7 @@ class GVAR(Uah_100) : GVAR(Uah)
   displayName = "Банкнота 100 грн";
   picture = QPATHTOF(data\100hrn.paa);
   descriptionShort = "Банкнота номіналом 100 гривень.";
-  value = 100;
+  GVAR(value) = 100;
 };
 class GVAR(Uah_200) : GVAR(Uah)
 {
@@ -76,7 +76,7 @@ class GVAR(Uah_200) : GVAR(Uah)
   displayName = "Банкнота 200 грн";
   picture = QPATHTOF(data\200hrn.paa);
   descriptionShort = "Банкнота номіналом 200 гривень.";
-  value = 200;
+  GVAR(value) = 200;
 };
 class GVAR(Uah_500) : GVAR(Uah)
 {
@@ -84,5 +84,5 @@ class GVAR(Uah_500) : GVAR(Uah)
   displayName = "Банкнота 500 грн";
   picture = QPATHTOF(data\500hrn.paa);
   descriptionShort = "Банкнота номіналом 500 гривень.";
-  value = 500;
+  GVAR(value) = 500;
 };

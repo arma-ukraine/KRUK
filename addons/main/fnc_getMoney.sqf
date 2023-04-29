@@ -15,7 +15,7 @@ params ["_unit"];
 private _money = 0;
 {
 	if (_x isKindOf ["JAGER_main_Uah", configFile >> "CfgWeapons"]) then {
-		_money = _money + getNumber (configFile >> "CfgWeapons" >> _x >> "value");
+		_money = _money + getNumber (configFile >> "CfgWeapons" >> _x >> QGVAR(value));
 	}
 } forEach items _unit;
 

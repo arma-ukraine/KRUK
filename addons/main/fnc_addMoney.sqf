@@ -40,7 +40,7 @@ switch (true) do {
 
 		// get banknotes from player.
 		private _player_banknotes = [items _target, [], {
-			getNumber (configFile >> "CfgWeapons" >> _x >> "value")
+			getNumber (configFile >> "CfgWeapons" >> _x >> QGVAR(value))
 		}, "ASCEND", {
 			_x isKindOf ["JAGER_main_Uah", configFile >> "CfgWeapons"]
 		}] call BIS_fnc_sortBy;
@@ -52,7 +52,7 @@ switch (true) do {
 
 		// Calculate sum of all the banknotes.
 		{
-			_sum = _sum + getNumber (configFile >> "CfgWeapons" >> _x >> "value");
+			_sum = _sum + getNumber (configFile >> "CfgWeapons" >> _x >> QGVAR(value));
 			_taken_banknotes pushBack _x;
 
 			if (_sum >= _delta) then {

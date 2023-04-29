@@ -13,7 +13,7 @@ TRACE_1("trace", nil);
 params ["_amount"];
 private _banknotes_config = "inheritsFrom _x == (configFile >> 'CfgWeapons' >> 'JAGER_main_Uah')" configClasses (configFile >> "CfgWeapons");
 private _nominals = [_banknotes_config, {
-	getNumber (_x >> "value")
+	getNumber (_x >> QGVAR(value))
 }] call CBA_fnc_filter;
 private _sum = 0;
 private _banknotes = [];

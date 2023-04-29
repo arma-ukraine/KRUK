@@ -6,6 +6,7 @@ PREP(moduleFuelConsumption);
 PREP(moduleUnarmed);
 PREP(moduleCharacters);
 PREP(moduleSpawner);
+PREP(moduleBuyer);
 
 PREP(addMoney);
 PREP(amountToBanknotes);
