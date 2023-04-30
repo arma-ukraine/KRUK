@@ -2,8 +2,6 @@ name = "Jager"
 mainprefix = "x"
 prefix = "JAGER"
 
-preprocess = false # Default: true
-
 [hemtt.launch]
 workshop = [
     # Minimum requirements for VR test.
@@ -41,11 +39,6 @@ workshop = [
     "612930542", # RDS Civilian Pack
     "2616555444", # Necroplague Mutants
     "2363837768", # Realistic Driving Terrains
-    # "2781344095", # Stalker Stuff !
-    # "2782616297", # Stalker Stuff Gear !
-    # "2000353389", # 2nd Ranger's Stalker
-    # "1996610193", # STALKER + CBRN Equipment !
-    # "2633812772", # Healthy Stalker
     "1383903166", # Diwako's stalker-like Anomalies
 
     "843577117", # RHS USAF
@@ -60,6 +53,13 @@ workshop = [
     "843632231", # RHS SAF
     "2174495332", # ACE Compat: RHS SAF
     "1486541773", # JSRS RHS SAF
+
+    # Unused/flawed/not working.
+    # "2781344095", # Stalker Stuff !
+    # "2782616297", # Stalker Stuff Gear !
+    # "2000353389", # 2nd Ranger's Stalker
+    # "1996610193", # STALKER + CBRN Equipment !
+    # "2633812772", # Healthy Stalker
 ]
 
 # Full mission.

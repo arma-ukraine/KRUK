@@ -4,5 +4,7 @@ class CfgFactionClasses
   class GVAR(modules) : NO_CATEGORY
   {
     displayName = QGVAR(modules);
+    priority = 2;
+    side = 7;
   };
 };

@@ -28,7 +28,6 @@ class CfgVehicles
         displayName = QGVAR(moduleAoeHint);
         function = QFUNC(moduleAoeHint);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 1;
         scopeCurator = 2;
     };
@@ -37,7 +36,6 @@ class CfgVehicles
         displayName = QGVAR(moduleBodyLoot);
         function = QFUNC(moduleBodyLoot);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
     };
@@ -46,7 +44,6 @@ class CfgVehicles
         displayName = QGVAR(moduleColorCorrection);
         function = QFUNC(moduleColorCorrection);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
     };
@@ -55,7 +52,6 @@ class CfgVehicles
         displayName = QGVAR(moduleEditorDynamicSimulation);
         function = QFUNC(moduleEditorDynamicSimulation);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
     };
@@ -64,7 +60,6 @@ class CfgVehicles
         displayName = QGVAR(moduleFuelConsumption);
         function = QFUNC(moduleFuelConsumption);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
     };
@@ -73,7 +68,6 @@ class CfgVehicles
         displayName = QGVAR(moduleUnarmed);
         function = QFUNC(moduleUnarmed);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
     };
@@ -83,16 +77,16 @@ class CfgVehicles
         displayName = QGVAR(moduleGradPersistenceAutosave);
         function = QFUNC(moduleGradPersistenceAutosave);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
         scope = 2;
         scopeCurator = 1;
+        isGlobal = 0; // run on server
     };
     class GVAR(moduleGradPersistenceSave) : Module_F
     {
         displayName = QGVAR(moduleGradPersistenceSave);
         function = QFUNC(moduleGradPersistenceSave);
         category = QGVAR(modules);
-        curatorCanAttach = 0;
+        curatorInfoType = QGVAR(RscDefendArea);
         scope = 1;
         scopeCurator = 2;
     };

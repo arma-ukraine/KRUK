@@ -10,7 +10,9 @@ class CfgPatches
 
     requiredVersion = 2.10;
     requiredAddons[] = {"CBA_main"};
-    units[] = {};
+    units[] = {
+        QGVAR(moduleAoeHint),
+        QGVAR(moduleGradPersistenceSave)};
     weapons[] = {};
   };
 };

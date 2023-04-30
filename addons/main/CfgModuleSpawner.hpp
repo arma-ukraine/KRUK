@@ -9,9 +9,8 @@ class GVAR(MODULE) : Module_F
   scope = 2;        // EDEN: 1 - hide, 2 - show
   scopeCurator = 1; // ZEUS: 1 - hide, 2 - show
 
-  isGlobal = 0;           // 0 - server only, 1 - everywhere
-  isTriggerActivated = 0; // 0 - activates once, 1 - requires trigger activation
-  canSetArea = 1;         // 0 - does not specify area, 1 - specifies area
+  isGlobal = 0;   // 0 - server only, 1 - everywhere
+  canSetArea = 1; // 0 - does not specify area, 1 - specifies area
 
   class Attributes : AttributesBase
   {
