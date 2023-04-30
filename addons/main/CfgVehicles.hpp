@@ -78,6 +78,25 @@ class CfgVehicles
         scopeCurator = 1;
     };
 
+    class GVAR(moduleGradPersistenceAutosave) : Module_F
+    {
+        displayName = QGVAR(moduleGradPersistenceAutosave);
+        function = QFUNC(moduleGradPersistenceAutosave);
+        category = QGVAR(modules);
+        curatorCanAttach = 0;
+        scope = 2;
+        scopeCurator = 1;
+    };
+    class GVAR(moduleGradPersistenceSave) : Module_F
+    {
+        displayName = QGVAR(moduleGradPersistenceSave);
+        function = QFUNC(moduleGradPersistenceSave);
+        category = QGVAR(modules);
+        curatorCanAttach = 0;
+        scope = 1;
+        scopeCurator = 2;
+    };
+
 #include "CfgModuleCharacter.hpp"
 #include "CfgModuleSpawner.hpp"
 #include "CfgModuleBuyer.hpp"

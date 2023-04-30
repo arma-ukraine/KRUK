@@ -5,6 +5,8 @@ PREP(moduleCharacter);
 PREP(moduleColorCorrection);
 PREP(moduleEditorDynamicSimulation);
 PREP(moduleFuelConsumption);
+PREP(moduleGradPersistenceAutosave);
+PREP(moduleGradPersistenceSave);
 PREP(moduleSpawner);
 PREP(moduleUnarmed);
 
