@@ -12,9 +12,9 @@ private _spawnActivationDistance = _logic getVariable "SpawnActivationDistance";
 
 // Create activation trigger.
 private _logicArea = _logic getvariable "objectArea";
-_trigger = createTrigger ["EmptyDetector", getPos _logic, false];
+_trigger = createTrigger ["EmptyDetector", getPosASL _logic, false];
 _trigger setTriggerActivation ["ANYPLAYER", "PRESENT", true]; // repeating
-_trigger setTriggerArea [_logicArea#0 + 2 * _spawnActivationDistance, _logicArea#1 + 2 * _spawnActivationDistance, getDir _logic, false];
+_trigger setTriggerArea [_logicArea#0 + _spawnActivationDistance, _logicArea#1 + _spawnActivationDistance, getDir _logic, false];
 _trigger setVariable ["logic", _logic];
 
 // Collect objects for spawning.
@@ -62,8 +62,6 @@ private _lootDefinitions = createHashMapFromArray [
 _logic setVariable ["groupsDefinitions", _groupsDefinitions];
 _logic setVariable ["lootDefinitions", _lootDefinitions];
 
-// TODO: items
-
 // set trigger statements.
 _trigger setTriggerStatements ["this", "call" + " " + str {
 	// Activated.
@@ -79,8 +77,9 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		_groupDefinition = selectRandom (values _groupsDefinitions);
 		private _group = createGroup (_groupDefinition#0);
 		{
-			private _unitPos = [getPos _logic, _logicArea] call BIS_fnc_randomPosTrigger;
-			private _unit = _group createUnit [_x, _unitPos, [], 0, "NONE"];
+			private _pos = [ _logic, _logicArea] call BIS_fnc_randomPosTrigger;
+			_pos set [2, 0];
+			private _unit = _group createUnit [_x, _pos, [], 0, "NONE"];
 			_unit setDir ([0, 360] call BIS_fnc_randomInt);
 			_units pushBack _unit;
 		} forEach (_groupDefinition#1);
@@ -112,7 +111,8 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 			private _class = _x;
 			private _amount = _y;
 			for "_" from 1 to _amount do {
-				private _pos = [getPos _logic, _logicArea] call BIS_fnc_randomPosTrigger;
+				private _pos = [getPosASL _logic, _logicArea] call BIS_fnc_randomPosTrigger;
+				_pos set [2, 0];
 				_object = createVehicle ["GroundWeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
 				_object setDir ([0, 360] call BIS_fnc_randomInt);
 				[_object, _class, 1] call _handler;

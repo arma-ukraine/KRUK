@@ -22,7 +22,7 @@ class GVAR(MODULE) : Module_F
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
       displayName = "Spawn trigger extra distance";
       typeName = "NUMBER";
-      defaultValue = "500";
+      defaultValue = "250";
     };
 #define MODULE_PROPERTY MinGroups
     class MODULE_PROPERTY : Edit

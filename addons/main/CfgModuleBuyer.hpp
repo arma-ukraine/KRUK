@@ -14,7 +14,7 @@ class GVAR(MODULE) : Module_F
   class Attributes : AttributesBase
   {
     // Module-specific arguments:
-#define MODULE_PROPERTY SpawnActivationDistance
+#define MODULE_PROPERTY BuyPriceMultiplier
     class MODULE_PROPERTY : Edit
     {
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));

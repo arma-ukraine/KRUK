@@ -38,4 +38,14 @@ addMissionEventHandler ["EntityKilled", {
 
 	// Remove assigned items.
 	removeAllAssignedItems _unit;
+
+	// Add some money to zombies.
+	systemChat format [typeOf _unit];
+	systemChat format ["%1", _unit isKindOf "Man"];
+	if (_unit isKindOf "Man") then {
+		{
+			_uniform = uniformContainer _unit;
+			_uniform addItemCargoGlobal [_x, 1];
+		} forEach (([2, 5] call BIS_fnc_randomInt) call JAGER_main_fnc_amountToBanknotes);
+	};
 }];

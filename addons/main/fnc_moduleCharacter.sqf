@@ -13,8 +13,6 @@ waitUntil {
 };
 params ["_logic"];
 
-systemChat format["%1", _logic getVariable "ExplosiveSpecialist"];
-
 // Retrieve parameters.
 private _character = player getVariable QGVAR(character);
 if (isNil "_character" or (getPlayerUID player == (_logic getVariable "OwnerId"))) then {
