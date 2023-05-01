@@ -53,7 +53,7 @@ class GVAR(MODULE) : Module_F
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
       displayName = "Anomalies per m2";
       typeName = "NUMBER";
-      defaultValue = "0.006";
+      defaultValue = "0.1";
     };
 #define MODULE_PROPERTY MaxDeviation
     class MODULE_PROPERTY : Edit

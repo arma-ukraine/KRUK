@@ -204,9 +204,9 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		_anomalyHandlers pushBack anomaly_fnc_createSpringboard;
 	};
 
-	private _anomalies = [];
+	private _anomaliesSpawned = _logic getVariable "anomaliesSpawned";
 	for "_" from 1 to _anomalyCount do {
-		if (count _anomalyHandlers == 0) then {
+		if (count _anomalyHandlers == 0 || !isNil "_anomaliesSpawned") then {
 			break;
 		};
 
@@ -236,9 +236,9 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		};
 
 		// spawn anomaly.
-		_anomalies pushBack ([_pos] call _anomalyHandler);
+		[_pos] call _anomalyHandler;
 	};
-	_logic setVariable ["anomalies", _anomalies];
+	_logic setVariable ["anomaliesSpawned", true];
 }, "call" + " " + str {
 	// Deactivated.
 	private _logic = thisTrigger getVariable "logic";
@@ -255,13 +255,6 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		{
 			deleteVehicle _x;
 		} forEach _lootContainers;
-	};
-	// anomalies.
-	private _anomalies = _logic getVariable "anomalies";
-	if (!isNil "_anomalies") then {
-		{
-			deleteVehicle _x;
-		} forEach _anomalies;
 	};
 }];
 
