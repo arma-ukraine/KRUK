@@ -39,6 +39,14 @@ class GVAR(MODULE) : Module_F
       typeName = "NUMBER";
       defaultValue = "0.006";
     };
+#define MODULE_PROPERTY MaxDeviation
+    class MODULE_PROPERTY : Edit
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Max deviation from densities";
+      typeName = "NUMBER";
+      defaultValue = "0.3";
+    };
 
     class ModuleDescription : ModuleDescription
     {

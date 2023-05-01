@@ -42,7 +42,6 @@ private _lootDefinitions = [];
 			{
 				private _type = _x#0;
 				private _cargo = _x#1;
-				systemChat format ["%1", _cargo];
 				for "_i" from 0 to ((count (_cargo#0)) - 1) do {
 					_class = _cargo#0#_i;
 					_amount = _cargo#1#_i;
@@ -51,7 +50,6 @@ private _lootDefinitions = [];
 					};
 				};
 			} forEach [["item", getItemCargo _x], ["weapon", getWeaponCargo _x], ["magazine", getMagazineCargo _x], ["backpack", getBackpackCargo _x]];
-			systemChat format ["%1", _lootDefinitions];
 		};
 		default {};
 	};
@@ -72,7 +70,7 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 	if (!(_logicArea#3)) then {
 		_area_m2 = (pi / 4) * _area_m2;
 	};
-	private _max_deviation = 0.3;
+	private _max_deviation = _logic getVariable "MaxDeviation";
 	private _deviation = 1 - _max_deviation + (random (_max_deviation * 2));
 
 	// spawn units.
