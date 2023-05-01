@@ -23,21 +23,21 @@ class GVAR(MODULE) : Module_F
       typeName = "NUMBER";
       defaultValue = "250";
     };
-#define MODULE_PROPERTY MinGroups
+#define MODULE_PROPERTY UnitDensity
     class MODULE_PROPERTY : Edit
     {
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
-      displayName = "Units: min groups";
+      displayName = "Units per m2";
       typeName = "NUMBER";
-      defaultValue = "1";
+      defaultValue = "0.006";
     };
-#define MODULE_PROPERTY MaxGroups
+#define MODULE_PROPERTY LootDensity
     class MODULE_PROPERTY : Edit
     {
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
-      displayName = "Units: max groups";
+      displayName = "Loot per m2";
       typeName = "NUMBER";
-      defaultValue = "3";
+      defaultValue = "0.006";
     };
 
     class ModuleDescription : ModuleDescription
