@@ -4,7 +4,7 @@ prefix = "JAGER"
 
 [hemtt.launch]
 workshop = [
-    # Minimum requirements for VR test.
+    # Minimum requirements for mod VR test.
     "450814997", # CBA_A3
     "2369477168", # Advanced Developer Tools
     "623475643", # Eden Enhanced
@@ -16,6 +16,7 @@ workshop = [
     "2018593688", # ACE Zeus Enhanced Compatibility
 
     "2291129343", # WBK Improved Melee System
+    "1383903166", # Diwako's stalker-like Anomalies
 
     # Full mission requirements, can be commented out for quick VR tests.
     "583496184", # CUP Terrains - Core
@@ -39,7 +40,6 @@ workshop = [
     "612930542", # RDS Civilian Pack
     "2616555444", # Necroplague Mutants
     "2363837768", # Realistic Driving Terrains
-    "1383903166", # Diwako's stalker-like Anomalies
 
     "843577117", # RHS USAF
     "773125288", # ACE Compat: RHS USAF
