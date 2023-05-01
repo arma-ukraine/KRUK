@@ -40,8 +40,6 @@ addMissionEventHandler ["EntityKilled", {
 	removeAllAssignedItems _unit;
 
 	// Add some money to zombies.
-	systemChat format [typeOf _unit];
-	systemChat format ["%1", _unit isKindOf "Man"];
 	if (_unit isKindOf "Man") then {
 		{
 			_uniform = uniformContainer _unit;

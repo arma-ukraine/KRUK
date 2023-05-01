@@ -65,6 +65,15 @@ _logic setVariable ["lootDefinitions", _lootDefinitions];
 _trigger setTriggerStatements ["this", "call" + " " + str {
 	// Activated.
 	private _logic = thisTrigger getVariable "logic";
+	private _lastActivatedTime = _logic getVariable "lastActivatedTime";
+	private _cooldown = _logic getVariable "Cooldown";
+
+	// Check cooldown.
+	if (!isNil "_lastActivatedTime" && time - _lastActivatedTime < _cooldown) exitWith {};
+	// Save last activation time.
+	_logic setVariable ["lastActivatedTime", time];
+
+	// load remaining variables.
 	private _logicArea = _logic getVariable "objectArea";
 	private _area_m2 = _logicArea#0 * _logicArea#1;
 	if (!(_logicArea#3)) then {

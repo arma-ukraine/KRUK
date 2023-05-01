@@ -39,6 +39,14 @@ class GVAR(MODULE) : Module_F
       typeName = "NUMBER";
       defaultValue = "0.006";
     };
+#define MODULE_PROPERTY AnomalyDensity
+    class MODULE_PROPERTY : Edit
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Anomalies per m2";
+      typeName = "NUMBER";
+      defaultValue = "0.006";
+    };
 #define MODULE_PROPERTY MaxDeviation
     class MODULE_PROPERTY : Edit
     {
@@ -46,6 +54,15 @@ class GVAR(MODULE) : Module_F
       displayName = "Max deviation from densities";
       typeName = "NUMBER";
       defaultValue = "0.3";
+    };
+
+#define MODULE_PROPERTY Cooldown
+    class MODULE_PROPERTY : Edit
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Spawner cooldown (seconds)";
+      typeName = "NUMBER";
+      defaultValue = "600";
     };
 
     class ModuleDescription : ModuleDescription
