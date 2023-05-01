@@ -23,6 +23,14 @@ class GVAR(MODULE) : Module_F
       typeName = "NUMBER";
       defaultValue = "250";
     };
+#define MODULE_PROPERTY BuildingsPercentage
+    class MODULE_PROPERTY : Edit
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Spawn in buildings (1 = 100%)";
+      typeName = "NUMBER";
+      defaultValue = "0.5";
+    };
 #define MODULE_PROPERTY UnitDensity
     class MODULE_PROPERTY : Edit
     {
@@ -54,6 +62,54 @@ class GVAR(MODULE) : Module_F
       displayName = "Max deviation from densities";
       typeName = "NUMBER";
       defaultValue = "0.3";
+    };
+#define MODULE_PROPERTY AnomaliesBurner
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Burner anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
+    };
+#define MODULE_PROPERTY AnomaliesElectra
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Electra anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
+    };
+#define MODULE_PROPERTY AnomaliesFog
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Fog anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
+    };
+#define MODULE_PROPERTY AnomaliesFruitPunch
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Fruit Punch anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
+    };
+#define MODULE_PROPERTY AnomaliesMeatgrinder
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Meatgrinder anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
+    };
+#define MODULE_PROPERTY AnomaliesSpringboard
+    class MODULE_PROPERTY : Checkbox
+    {
+      property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
+      displayName = "Springboard anomalies";
+      typeName = "BOOL";
+      defaultValue = "false";
     };
 
 #define MODULE_PROPERTY Cooldown

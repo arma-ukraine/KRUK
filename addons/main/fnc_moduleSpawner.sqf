@@ -67,6 +67,7 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 	private _logic = thisTrigger getVariable "logic";
 	private _lastActivatedTime = _logic getVariable "lastActivatedTime";
 	private _cooldown = _logic getVariable "Cooldown";
+	private _buildingsPercentage = _logic getVariable "BuildingsPercentage";
 
 	// Check cooldown.
 	if (!isNil "_lastActivatedTime" && time - _lastActivatedTime < _cooldown) exitWith {};
@@ -95,7 +96,7 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 			private _pos = [ _logic, _logicArea] call BIS_fnc_randomPosTrigger;
 			_pos set [2, 0];
 
-			if (random 1 > 0.5) then {
+			if (random 1 < _buildingsPercentage) then {
 				// try to find building position half the time.
 				private _suitable_building_positions = [];
 				{
@@ -152,7 +153,7 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		// find position.
 		private _pos = [getPosASL _logic, _logicArea] call BIS_fnc_randomPosTrigger;
 		_pos set [2, 0];
-		if (random 1 > 0.5) then {
+		if (random 1 < _buildingsPercentage) then {
 			// try to find building position half the time.
 			private _suitable_building_positions = [];
 			{
@@ -178,6 +179,66 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		_lootContainers pushBack _object;
 	};
 	_logic setVariable ["lootContainers", _lootContainers];
+
+	// spawn anomalies.
+	private _anomalyDensity = _logic getVariable "AnomalyDensity";
+	private _anomalyCount = ceil (_area_m2 * _anomalyDensity * _deviation);
+
+	private _anomalyHandlers = [];
+	if (_logic getVariable "AnomaliesBurner") then {
+		_anomalyHandlers pushBack anomaly_fnc_createBurner;
+	};
+	if (_logic getVariable "AnomaliesElectra") then {
+		_anomalyHandlers pushBack anomaly_fnc_createElectra;
+	};
+	if (_logic getVariable "AnomaliesFog") then {
+		_anomalyHandlers pushBack anomaly_fnc_createFog;
+	};
+	if (_logic getVariable "AnomaliesFruitPunch") then {
+		_anomalyHandlers pushBack anomaly_fnc_createFruitPunch;
+	};
+	if (_logic getVariable "AnomaliesMeatgrinder") then {
+		_anomalyHandlers pushBack anomaly_fnc_createMeatgrinder;
+	};
+	if (_logic getVariable "AnomaliesSpringboard") then {
+		_anomalyHandlers pushBack anomaly_fnc_createSpringboard;
+	};
+
+	private _anomalies = [];
+	for "_" from 1 to _anomalyCount do {
+		if (count _anomalyHandlers == 0) then {
+			break;
+		};
+
+		// Decide which anomaly do we spawn.
+		_anomalyHandler = selectRandom _anomalyHandlers;
+
+		// find position.
+		private _pos = [getPosASL _logic, _logicArea] call BIS_fnc_randomPosTrigger;
+		_pos set [2, 0];
+		if (random 1 > 0.5) then {
+			// try to find building position half the time.
+			private _suitable_building_positions = [];
+			{
+				_suitable_building_positions = _suitable_building_positions + (_x buildingPos -1);
+			} forEach nearestObjects [_pos, ["House"], 50];
+			_building_pos = selectRandom _suitable_building_positions;
+			// if found - replace original position with building position.
+			if (!isNil "_building_pos") then {
+				_pos = _building_pos;
+			};
+		} else {
+			// find safe position on the ground the other half time.
+			private _safe_pos = [_pos, 0, 10, 5] call BIS_fnc_findSafePos;
+			if (!isNil "_safe_pos") then {
+				_pos = _safe_pos;
+			};
+		};
+
+		// spawn anomaly.
+		_anomalies pushBack ([_pos] call _anomalyHandler);
+	};
+	_logic setVariable ["anomalies", _anomalies];
 }, "call" + " " + str {
 	// Deactivated.
 	private _logic = thisTrigger getVariable "logic";
@@ -194,6 +255,13 @@ _trigger setTriggerStatements ["this", "call" + " " + str {
 		{
 			deleteVehicle _x;
 		} forEach _lootContainers;
+	};
+	// anomalies.
+	private _anomalies = _logic getVariable "anomalies";
+	if (!isNil "_anomalies") then {
+		{
+			deleteVehicle _x;
+		} forEach _anomalies;
 	};
 }];
 
