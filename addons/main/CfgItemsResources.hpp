@@ -1,8 +1,21 @@
-class GVAR(Brash) : GVAR(Item)
+class GVAR(Trash) : GVAR(Item)
 {
   scope = 2;
-  displayName = "Хмиз";
-  descriptionShort = "Кілька гілочок.";
+  displayName = "Сміття";
+  descriptionShort = "Нашо воно тобі?";
+  picture = QPATHTOF(data\wip.paa);
+  GVAR(value) = 5;
+  class ItemInfo : InventoryItem_Base_F
+  {
+    mass = 20;
+  };
+  // Value per mass: 0.25
+};
+class GVAR(AnomalousWood) : GVAR(Item)
+{
+  scope = 2;
+  displayName = "Аномальна Деревина";
+  descriptionShort = "Тепленька на дотик.";
   picture = QPATHTOF(data\wip.paa);
   GVAR(value) = 5;
   class ItemInfo : InventoryItem_Base_F

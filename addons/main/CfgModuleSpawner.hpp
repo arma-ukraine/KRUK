@@ -69,7 +69,7 @@ class GVAR(MODULE) : Module_F
       property = QGVAR(DOUBLES(MODULE, MODULE_PROPERTY));
       displayName = "Anomalies per m2";
       typeName = "NUMBER";
-      defaultValue = "0.1";
+      defaultValue = "0.006";
     };
 #define MODULE_PROPERTY AnomaliesBurner
     class MODULE_PROPERTY : Checkbox
