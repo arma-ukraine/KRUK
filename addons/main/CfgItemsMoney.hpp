@@ -1,13 +1,5 @@
-class GVAR(Uah) : ItemCore
+class GVAR(Uah) : GVAR(Item)
 {
-  scope = 1;
-  displayName = "-";
-  detectRange = -1;
-  simulation = "ItemMineDetector";
-  useAsBinocular = 0;
-  type = 4096;
-  picture = "";
-  descriptionShort = "";
   GVAR(value) = 0;
   class ItemInfo : InventoryItem_Base_F
   {
