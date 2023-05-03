@@ -65,6 +65,11 @@ player addEventHandler ["Respawn", {
 	private _character = _corpse getVariable QGVAR(character);
 	_unit setVariable [QGVAR(character), _character, true];
 	[_unit] call FUNC(applyCharacter);
+
+	// set hunger and thirst to high values after respawn.
+	{
+		_unit setVariable[_x, "70", true];
+	} forEach ["acex_field_rations_thirst", "acex_field_rations_hunger"];
 }];
 
 // =================================================================================
