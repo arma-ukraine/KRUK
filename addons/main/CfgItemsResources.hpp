@@ -3,7 +3,7 @@ class GVAR(Trash) : GVAR(Item)
   scope = 2;
   displayName = "Сміття";
   descriptionShort = "Нашо воно тобі?";
-  picture = QPATHTOF(data\wip.paa);
+  picture = QPATHTOF(data\textures\wip.paa);
   GVAR(value) = 5;
   class ItemInfo : InventoryItem_Base_F
   {
@@ -16,7 +16,7 @@ class GVAR(AnomalousWood) : GVAR(Item)
   scope = 2;
   displayName = "Аномальна Деревина";
   descriptionShort = "Тепленька на дотик.";
-  picture = QPATHTOF(data\wip.paa);
+  picture = QPATHTOF(data\textures\wip.paa);
   GVAR(value) = 5;
   class ItemInfo : InventoryItem_Base_F
   {
@@ -27,9 +27,9 @@ class GVAR(AnomalousWood) : GVAR(Item)
 class GVAR(IronScrap) : GVAR(Item)
 {
   scope = 2;
-  displayName = "Залізний металобрухт";
+  displayName = "Брухт: Залізо";
   descriptionShort = "Копійка гривню береже!";
-  picture = QPATHTOF(data\wip.paa);
+  picture = QPATHTOF(data\textures\wip.paa);
   GVAR(value) = 10;
   class ItemInfo : InventoryItem_Base_F
   {
@@ -40,9 +40,9 @@ class GVAR(IronScrap) : GVAR(Item)
 class GVAR(SteelScrap) : GVAR(Item)
 {
   scope = 2;
-  displayName = "Сталевий металобрухт";
+  displayName = "Брухт: Сталь";
   descriptionShort = "Міцніше ніж залізо.";
-  picture = QPATHTOF(data\wip.paa);
+  picture = QPATHTOF(data\textures\wip.paa);
   GVAR(value) = 20;
   class ItemInfo : InventoryItem_Base_F
   {
@@ -53,9 +53,9 @@ class GVAR(SteelScrap) : GVAR(Item)
 class GVAR(CopperScrap) : GVAR(Item)
 {
   scope = 2;
-  displayName = "Мідний металобрухт";
+  displayName = "Брухт: Мідь";
   descriptionShort = "Блищить на сонці!";
-  picture = QPATHTOF(data\wip.paa);
+  picture = QPATHTOF(data\textures\wip.paa);
   GVAR(value) = 30;
   class ItemInfo : InventoryItem_Base_F
   {

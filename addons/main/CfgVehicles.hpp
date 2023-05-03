@@ -90,6 +90,15 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 2;
     };
+#define MODULE moduleHungryThirstyEffects
+    class GVAR(MODULE) : Module_F
+    {
+        displayName = QGVAR(MODULE);
+        function = QFUNC(MODULE);
+        category = QGVAR(modules);
+        scope = 2;        // EDEN: 1 - hide, 2 - show
+        scopeCurator = 1; // ZEUS: 1 - hide, 2 - show
+    };
 
 #include "CfgModuleCharacter.hpp"
 #include "CfgModuleSpawner.hpp"

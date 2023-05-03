@@ -7,6 +7,7 @@ PREP(moduleEditorDynamicSimulation);
 PREP(moduleFuelConsumption);
 PREP(moduleGradPersistenceAutosave);
 PREP(moduleGradPersistenceSave);
+PREP(moduleHungryThirstyEffects);
 PREP(moduleSpawner);
 PREP(moduleUnarmed);
 

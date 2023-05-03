@@ -23,3 +23,4 @@ PRELOAD_ADDONS;
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgSounds.hpp"
