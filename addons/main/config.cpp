@@ -9,10 +9,11 @@ class CfgPatches
     url = "https://discord.gg/DYA3dNS";
 
     requiredVersion = 2.10;
-    requiredAddons[] = {"CBA_main"};
+    requiredAddons[] = {"CBA_main", "afou_c_mig29"};
     units[] = {
         QGVAR(moduleAoeHint),
-        QGVAR(moduleGradPersistenceSave)};
+        QGVAR(moduleGradPersistenceSave),
+        "b_afougf_mig29sm_prs"};
     weapons[] = {};
   };
 };
