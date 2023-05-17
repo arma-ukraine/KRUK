@@ -9,8 +9,6 @@ TRACE_1("trace", nil);
 if (!isServer) exitWith {};
 params ["_logic"];
 
-systemChat "test";
-
 private _pos = getPosASL _logic;
 
 private ["_fpsMarker"];
