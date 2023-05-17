@@ -8,6 +8,7 @@ PREP(moduleFuelConsumption);
 PREP(moduleGradPersistenceAutosave);
 PREP(moduleGradPersistenceSave);
 PREP(moduleHungryThirstyEffects);
+PREP(moduleServerFPS);
 PREP(moduleSpawner);
 PREP(moduleUnarmed);
 

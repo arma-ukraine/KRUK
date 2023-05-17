@@ -49,6 +49,16 @@ class CfgVehicles
         };
     };
 
+#define MODULE(NAME, EDEN, ZEUS)   \
+    class GVAR(NAME) : Module_F    \
+    {                              \
+        displayName = QGVAR(NAME); \
+        function = QFUNC(NAME);    \
+        category = QGVAR(modules); \
+        scope = EDEN;              \
+        scopeCurator = ZEUS;       \
+    };
+
     // Base module classes.
     class Logic;
     class Module_F : Logic
@@ -139,15 +149,13 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 2;
     };
-#define MODULE moduleHungryThirstyEffects
-    class GVAR(MODULE) : Module_F
-    {
-        displayName = QGVAR(MODULE);
-        function = QFUNC(MODULE);
-        category = QGVAR(modules);
-        scope = 2;        // EDEN: 1 - hide, 2 - show
-        scopeCurator = 1; // ZEUS: 1 - hide, 2 - show
-    };
+
+    // MODULE(module_name, scope_eden, scope_zeus)
+    // EDEN/ZEUS modules.
+    // EDEN modules.
+    MODULE(moduleHungryThirstyEffects, 2, 1)
+    MODULE(moduleServerFPS, 2, 1)
+    // ZEUS modules.
 
 #include "CfgModuleCharacter.hpp"
 #include "CfgModuleSpawner.hpp"
