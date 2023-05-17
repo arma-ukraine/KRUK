@@ -8,8 +8,8 @@ TRACE_1("trace", nil);
 // Server only.
 if (!isServer) exitWith {};
 params ["_logic"];
-
 private _pos = getPosASL _logic;
+deleteVehicle _logic;
 
 private ["_fpsMarker"];
 
