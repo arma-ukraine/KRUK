@@ -1,7 +1,9 @@
 #include "script_component.hpp"
 TRACE_1("trace", nil);
 /*
-	Server FPS module - displays server fps..
+	Server FPS module - displays server fps.
+	
+	Source: github.com/KillahPotatoes/KP-Support/blob/master/kp_support_rhs.Altis/scripts/show_fps.sqf
 	
 	call FUNC(...);
 */
