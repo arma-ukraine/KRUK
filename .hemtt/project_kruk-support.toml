@@ -1,0 +1,46 @@
+name = "Kruk"
+mainprefix = "x"
+prefix = "KRUK"
+
+[hemtt.launch]
+workshop = [
+    # Minimum requirements for mod VR test.
+    "450814997", # CBA_A3
+    "2369477168", # Advanced Developer Tools
+    "623475643", # Eden Enhanced
+    "1779063631", # Zeus Enhanced
+    
+    "583496184", # CUP Terrains - Core
+    "743968516", # Beketov
+
+    "1377912885", # ACE No Medical
+    "2018593688", # ACE Zeus Enhanced Compatibility
+    "773125288", # ACE Compat: RHS USAF
+    "773131200", # ACE Compat: RHS AFRF
+    "884966711", # ACE Compat: RHS GREF
+    "2174495332", # ACE Compat: RHS SAF
+
+    "894678801", # TFAR BETA
+
+    "861133494", # JSRS SOUNDMOD
+    "1180533757", # JSRS RHS USAF
+    "945476727", # JSRS RHS AFRF
+    "1180534892", # JSRS RHS GREF
+    "1486541773", # JSRS RHS SAF
+
+    "843577117", # RHS USAF
+    "843425103", # RHS AFRF
+    "843593391", # RHS GREF
+    "843632231", # RHS SAF
+
+    "2673284246", # Ukrainian Factions Project
+    "1998821941", # Ukrainian Language Pack
+    "2189592034", # CTab Devastator Edition
+    "1858075458", # Lambs
+]
+
+parameters = [
+    "-noPause",
+    "-noPauseAudio",
+    "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\KRUK-support.beketov\\mission.sqm\"",
+]

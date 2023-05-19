@@ -1,0 +1,76 @@
+name = "KRUK"
+mainprefix = "x"
+prefix = "KRUK"
+
+[hemtt.launch]
+workshop = [
+    # Minimum requirements for mod VR test.
+    "450814997", # CBA_A3
+    "2369477168", # Advanced Developer Tools
+    "623475643", # Eden Enhanced
+    "1779063631", # Zeus Enhanced
+
+    "463939057", # ACE
+    "2018593688", # ACE Zeus Enhanced Compatibility
+    # "2020940806", # KAT Advanced Medical
+
+    # "2291129343", # WBK Improved Melee System
+    # "1383903166", # Diwako's stalker-like Anomalies
+
+    # Full mission requirements, can be commented out for quick VR tests.
+    # "583496184", # CUP Terrains - Core
+    # "1128256978", # Chernarus Redux
+    
+    # "642912021", # Zeus Templates/Compositions
+    # "2352603233", # GreenMag
+    # "2352615767", # GreenMag RHS USAF COMPAT
+    # "766491311", # ACE3 Animations and Actions
+    # "333310405", # Enhanced Movement
+    # "825174634", # Suppress
+    # "894678801", # TFAR
+    # "1556296528", # Horror Mod
+    # "1998821941", # Ukrainian Language
+    # "2791403093", # Better Inventory
+    # "1858075458", # LAMBS Danger.fsm
+    # "1808238502", # LAMBS suppression
+
+    # "2789152015", # WBK Zombies
+    # "1673456286", # 3cb Factions
+    # "612930542", # RDS Civilian Pack
+    # "2616555444", # Necroplague Mutants
+    # "2363837768", # Realistic Driving Terrains
+
+    # "861133494", # JSRS SOUNDMOD
+    # "1180533757", # JSRS RHS USAF
+    # "945476727", # JSRS RHS AFRF
+    # "1180534892", # JSRS RHS GREF
+    # "1486541773", # JSRS RHS SAF
+
+    # "843577117", # RHS USAF
+    # "773125288", # ACE Compat: RHS USAF
+    # "843425103", # RHS AFRF
+    # "773131200", # ACE Compat: RHS AFRF
+    # "843593391", # RHS GREF
+    # "884966711", # ACE Compat: RHS GREF
+    # "843632231", # RHS SAF
+    # "2174495332", # ACE Compat: RHS SAF
+
+    # "2673284246", # Ukrainian Factions Project
+
+    # Unused/flawed/not working.
+    # "2781344095", # Stalker Stuff !
+    # "2782616297", # Stalker Stuff Gear !
+    # "2000353389", # 2nd Ranger's Stalker
+    # "1996610193", # STALKER + CBRN Equipment !
+    # "2633812772", # Healthy Stalker
+]
+
+# Full mission.
+# parameters = [
+#     "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER.chernarusredux\\mission.sqm\"",
+# ]
+
+# Quick VR test.
+parameters = [
+    "\"C:\\Users\\DiRaven\\Documents\\Arma 3\\mpmissions\\JAGER-test.VR\\mission.sqm\"",
+]

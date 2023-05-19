@@ -4,7 +4,7 @@ class CfgPatches
 {
   class ADDON
   {
-    name = "Jager Main";
+    name = "Kruk Main";
     author = "DiRaven#0001";
     url = "https://discord.gg/DYA3dNS";
 

@@ -44,6 +44,6 @@ addMissionEventHandler ["EntityKilled", {
 		{
 			_uniform = uniformContainer _unit;
 			_uniform addItemCargoGlobal [_x, 1];
-		} forEach (([2, 5] call BIS_fnc_randomInt) call JAGER_main_fnc_amountToBanknotes);
+		} forEach (([2, 5] call BIS_fnc_randomInt) call KRUK_main_fnc_amountToBanknotes);
 	};
 }];

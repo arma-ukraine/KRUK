@@ -1,4 +1,4 @@
-#define PREFIX JAGER
+#define PREFIX KRUK
 #define COMPONENT main
 
 // #define DEBUG_MODE_FULL

@@ -29,7 +29,7 @@ class GVAR(MODULE) : Module_F
   // Module description (must inherit from base class, otherwise pre-defined entities won't be available):
   class ModuleDescription : ModuleDescription
   {
-    description = "Create a box, put some items in there, sync to module.<br>Once in-game - there will be a buy action that will replace items placed by players with money. Items must have JAGER_main_value property in order to be registered for purchase.";
+    description = "Create a box, put some items in there, sync to module.<br>Once in-game - there will be a buy action that will replace items placed by players with money. Items must have KRUK_main_value property in order to be registered for purchase.";
     sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
 
     class LocationArea_F

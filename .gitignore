@@ -3,6 +3,9 @@
 !.vscode
 !.hemtt
 
+.hemtt/project.toml
+preset.html
+
 *.pbo
 *.bisign
 *.rpt

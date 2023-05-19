@@ -18,8 +18,8 @@ private _buyableClasses = [];
 {
 	private _items = getItemCargo _x;
 	{
-		private _value = getNumber (configFile >> "CfgWeapons" >> _x >> "JAGER_main_value");
-		if (_value == 0 or _x isKindOf ["JAGER_main_Uah", configFile >> "CfgWeapons"]) then {
+		private _value = getNumber (configFile >> "CfgWeapons" >> _x >> "KRUK_main_value");
+		if (_value == 0 or _x isKindOf ["KRUK_main_Uah", configFile >> "CfgWeapons"]) then {
 			continue
 		};
 		_buyableClasses pushBackUnique _x;
@@ -38,9 +38,9 @@ private _buyableClasses = [];
 			private _class = _items#0#_i;
 			private _amount = _items#1#_i;
 
-			private _value = getNumber (configFile >> "CfgWeapons" >> _class >> "JAGER_main_value");
+			private _value = getNumber (configFile >> "CfgWeapons" >> _class >> "KRUK_main_value");
 			// Exclude money and items without value.
-			if (_value == 0 or _class isKindOf ["JAGER_main_Uah", configFile >> "CfgWeapons"]) then {
+			if (_value == 0 or _class isKindOf ["KRUK_main_Uah", configFile >> "CfgWeapons"]) then {
 				systemChat format["%1 тут не купують. Приберіть і спробуйте знову.", getText (configFile >> "CfgWeapons" >> _class >> "displayName")];
 				breakOut "main";
 			};
@@ -51,7 +51,7 @@ private _buyableClasses = [];
 		clearItemCargoGlobal _target;
 		{
 			_target addItemCargoGlobal [_x, 1];
-		} forEach (_total call JAGER_main_fnc_amountToBanknotes);
+		} forEach (_total call KRUK_main_fnc_amountToBanknotes);
 		systemChat format ["Продано за %1 грн.", _total];
 	}, [_buyableClasses, _buyPriceMultiplier], 1, true, true, "", "true", 2, false, "", ""]
 } forEach synchronizedObjects _logic;

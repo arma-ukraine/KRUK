@@ -23,7 +23,7 @@ if ret != 1:
 # Publish.
 dist_path = pathlib.Path(f"{settings.PROJECT_PATH}/.hemttout/release")
 publisher_path = pathlib.Path(f"{settings.TOOLS_PATH}/Publisher/publisherCmd.exe")
-mod_id = settings.JAGER_MOD_ID
+mod_id = settings.MOD_ID
 
 os.system("hemtt.exe release")
 cmd = (

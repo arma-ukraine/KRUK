@@ -3,7 +3,7 @@ from . import settings
 
 project_toml = toml.load(".hemtt/project.toml")
 rows = ""
-for identifier in project_toml["hemtt"]["launch"]["workshop"] + [settings.JAGER_MOD_ID]:
+for identifier in project_toml["hemtt"]["launch"]["workshop"] + [settings.MOD_ID]:
     rows += f"""
       <tr data-type="ModContainer">
         <td data-type="DisplayName"></td>
