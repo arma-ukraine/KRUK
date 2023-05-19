@@ -35,38 +35,6 @@
       "group": {
         "kind": "build",
       }
-    },
-    {
-      "label": "run-server",
-      "type": "shell",
-      "command": "start python3 run_server.py",
-      "group": {
-        "kind": "build",
-      }
-    },
-    {
-      "label": "run-client",
-      "type": "shell",
-      "command": "start python3 run_client.py",
-      "group": {
-        "kind": "build",
-      }
-    },
-    {
-      "label": "kill-client",
-      "type": "shell",
-      "command": "python3 kill_client.py",
-      "group": {
-        "kind": "build",
-      }
-    },
-    {
-      "label": "kill-server",
-      "type": "shell",
-      "command": "python3 kill_server.py",
-      "group": {
-        "kind": "build",
-      }
     }
   ]
 }
