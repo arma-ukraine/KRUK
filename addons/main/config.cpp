@@ -4,7 +4,7 @@ class CfgPatches
 {
   class ADDON
   {
-    name = "Kruk Main";
+    name = "KRUK Main";
     author = "DiRaven#0001";
     url = "https://discord.gg/DYA3dNS";
 
@@ -13,7 +13,7 @@ class CfgPatches
     units[] = {
         QGVAR(moduleAoeHint),
         QGVAR(moduleGradPersistenceSave),
-        GVAR(mig29sm_ars)};
+        QGVAR(mig29sm_ars)};
     weapons[] = {};
   };
 };
