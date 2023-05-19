@@ -13,7 +13,7 @@ class CfgPatches
     units[] = {
         QGVAR(moduleAoeHint),
         QGVAR(moduleGradPersistenceSave),
-        "b_afougf_mig29sm_prs"};
+        "b_afougf_mig29sm_ars"};
     weapons[] = {};
   };
 };
