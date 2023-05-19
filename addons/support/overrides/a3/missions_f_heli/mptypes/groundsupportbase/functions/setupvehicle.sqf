@@ -56,7 +56,7 @@ true,
 true,
 "",
 "true", // _target, _this, _originalTarget
-5,
+10,
 false,
 "",
 ""]] remoteExec ["addAction"];
