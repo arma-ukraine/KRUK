@@ -5,6 +5,7 @@
 
 .hemtt/project.toml
 preset.html
+hemtt.exe
 
 *.pbo
 *.bisign
