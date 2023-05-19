@@ -13,7 +13,7 @@ class b_afougf_mig29sm
 
 class CfgVehicles
 {
-    class b_afougf_mig29sm_ars : b_afougf_mig29sm
+    class GVAR(mig29sm_ars) : b_afougf_mig29sm
     {
         displayName = "Mig-29CM-ARS";
 
